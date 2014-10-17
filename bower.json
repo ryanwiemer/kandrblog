@@ -1,0 +1,25 @@
+{
+  "name": "K&R Blog theme",
+  "version": "1.0.0",
+  "authors": [
+    "Ryan Wiemer <ryan@ryanwiemer.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~3.2",
+    "neat": "~1.5",
+    "jquery-form": "~3.46.0",
+    "jquery-validate": "~1.13.0",
+    "fastclick": "~1.0.3",
+    "placeholders": "~3.0.2",
+    "jquery": "~2.1.1",
+    "foundation": "~5.4.6"
+  }
+}
