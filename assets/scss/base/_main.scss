@@ -3,10 +3,11 @@
  * ------- */
 
 body {
-  //background: #eee;
+
 }
 
 .container {
-  background: green;
-  margin: 0 auto;
+  max-width: $container;
+  padding: 0 1em;
+  margin: 400px auto 0;
 }

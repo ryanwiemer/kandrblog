@@ -68,6 +68,64 @@ function posts_link_attributes_prev() {
 
 
 
+////////////////////////
+//Edits to Image Output/
+////////////////////////
+
+//Featured Images
+add_theme_support( 'post-thumbnails');
+
+//Remove <p> tags from images
+function filter_ptags_on_images($content){
+  return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+add_filter('the_content', 'filter_ptags_on_images');
+
+//Remove Image Dimensions
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
+add_filter( 'image_send_to_editor', 'remove_thumbnail_dimensions', 10 );
+// Removes attached image sizes as well
+add_filter( 'the_content', 'remove_thumbnail_dimensions', 10 );
+function remove_thumbnail_dimensions( $html ) {
+  		$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+  		return $html;
+}
+
+//Remove Attachement Dimensions
+add_shortcode( 'wp_caption', 'fixed_img_caption_shortcode' );
+add_shortcode( 'caption', 'fixed_img_caption_shortcode' );
+function fixed_img_caption_shortcode($attr, $content = null) {
+  if ( ! isset( $attr['caption'] ) ) {
+     if ( preg_match( '#((?:<a [^>]+>\s*)?<img [^>]+>(?:\s*</a>)?)(.*)#is', $content, $matches ) ) {
+     $content = $matches[1];
+     $attr['caption'] = trim( $matches[2] );
+     }
+  }
+  $output = apply_filters( 'img_caption_shortcode', '', $attr, $content );
+     if ( $output != '' )
+     return $output;
+  extract( shortcode_atts(array(
+  'id'      => '',
+  'align'   => 'alignnone',
+  'width'   => '',
+  'caption' => ''
+  ), $attr));
+  if ( 1 > (int) $width || empty($caption) )
+  return $content;
+  if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
+  return '<p ' . $id . 'class="wp-caption ' . esc_attr($align) . '" >'
+  . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></p>';
+}
+
+//Featured Image Support and removing some file sizes
+add_theme_support( 'post-thumbnails');
+function trickspanda_remove_default_image_sizes( $sizes) {
+    unset( $sizes['thumbnail']);
+    //unset( $sizes['medium']);
+    unset( $sizes['large']);
+    return $sizes;
+}
+add_filter('intermediate_image_sizes_advanced', 'trickspanda_remove_default_image_sizes');
 
 
 
@@ -83,9 +141,17 @@ add_action( 'init', 'register_my_menu' );
 
 
 
+////Remove unnessary Yarp code
+function my_theme_deregister_plugin_assets_header() {
+  wp_dequeue_style('yarppWidgetCss');
+  wp_deregister_style('yarppRelatedCss');
+}
+add_action( 'wp_print_styles', 'my_theme_deregister_plugin_assets_header' );
 
-
-
+function my_theme_deregister_plugin_assets_footer() {
+  wp_dequeue_style('yarppRelatedCss');
+}
+add_action( 'wp_footer', 'my_theme_deregister_plugin_assets_footer' );
 
 
 ////////////////////////
@@ -95,8 +161,10 @@ add_action( 'init', 'register_my_menu' );
 //Enqueue scripts and styles.
 function kandrblog_scripts() {
   wp_enqueue_style( 'kandrblog-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
-  wp_enqueue_script( 'kandrblog-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
-  wp_enqueue_script( 'kandrblog-foundation',  get_template_directory_uri() . '/bower_components/foundation/js/foundation.min.js', '', '', true);
+  wp_enqueue_script( 'kandrblog-nav',  get_template_directory_uri() . '/assets/js/responsive-nav.min.js', '', '', true);
+  //wp_enqueue_script( 'kandrblog-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
+  wp_enqueue_script( 'kandrblog-global',  get_template_directory_uri() . '/assets/js/global.js', '', '', true);
+  //wp_enqueue_script( 'kandrblog-foundation',  get_template_directory_uri() . '/bower_components/foundation/js/foundation.min.js', '', '', true);
   //wp_enqueue_script( 'kandrblog-modernizr',  get_template_directory_uri() . '/assets/js/modernizr.min.js');
   //wp_enqueue_script( 'kandrblog-global-script',  get_template_directory_uri() . '/assets/js/global.min.js', '', '', true);
 }

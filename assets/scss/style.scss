@@ -3,7 +3,7 @@
 @import "../../bower_components/neat/app/assets/stylesheets/neat";
 
 //Founddation
-@import "../../bower_components/foundation/scss/foundation";
+//@import "../../bower_components/foundation/scss/foundation";
 
 //Variables
 @import "_vars";
@@ -25,3 +25,6 @@
 
 //Objects
 @import "objects/_menu";
+@import "objects/_entry";
+@import "objects/_footer";
+@import "objects/_yarpp";

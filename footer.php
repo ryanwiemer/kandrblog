@@ -9,7 +9,6 @@
 ?>
 
 <footer class="site-footer">
-<p>footer goes here.</p>
 </footer><!-- site-footer -->
 
 <?php wp_footer(); ?>

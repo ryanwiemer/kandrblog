@@ -2,10 +2,122 @@
  *   MENU  *
  * ------- */
 
- .site-header {
-  background: red;
+.site-header {
+  min-height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background: white;
+  background: rgba(255,255,255, .95);
+  border-bottom: 1px solid $secondary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10000;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  @include bp(medium) {
+    min-height: 100px;
+    line-height: 100px;
+  }
+}
+
+.site-header--shrink {
+  min-height: 60px;
+  line-height: 60px;
+}
+
+.site-header__nav {
+  //max-width: $container;
+  margin: 60px auto 0;
+  @include bp(medium) {
+    margin: 0 auto;
+    padding: 0 2em;
+  }
+}
+
+.js .site-header__nav {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.site-header__nav ul {
+  list-style: none;
+  @include bp(medium) {
+    float: right;
+  }
 }
 
 .site-header__nav ul li {
-  display: inline-block;
+  font-family: $headline;
+  text-transform: uppercase;
+  line-height: 60px;
+  text-align: center;
+  margin: 0;
+  border-top: 1px solid $secondary;
+  @include bp(medium) {
+    display: inline-block;
+    border: none;
+    margin-left: 2em;
+  }
+}
+
+.site-header__nav ul li a {
+  color: $base;
+  padding-bottom: 3px;
+  display: block;
+  //border-bottom: 2px solid $highlight;
+}
+
+.site-header__nav ul li a:hover {
+  color: #222;
+  background: $secondary;
+  @include bp(medium) {
+    background: none;
+    color: $highlight;
+  }
+}
+
+.nav-toggle {
+  color: $base;
+  text-transform: uppercase;
+  float: right;
+  padding-right: 1em;
+  font-family: 'icons';
+  font-size: 18px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  right: 0;
+}
+
+.site-header__nav.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+@media screen and (min-width: 750px) {
+  .js .site-header__nav {
+    position: relative;
+  }
+  .js .site-header__nav.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
 }

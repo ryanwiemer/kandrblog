@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
   <title><?php wp_title('|', true, 'right'); ?></title>
+  <script src="//use.typekit.net/fqx1jej.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

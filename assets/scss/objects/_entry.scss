@@ -1,0 +1,81 @@
+/* ------------------ *
+ *   ENTRY (ARTICLE)  *
+ * ------------------ */
+
+
+
+article {
+  //max-width: 600px;
+  margin: 0 auto 3em;
+}
+
+.entry__header {
+  max-width: 600px;
+  margin:0 auto 1em;
+  text-align: center;
+}
+
+.entry__title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.entry__title a {
+  color: $highlight;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.entry__content {
+  //max-width: 600px;
+}
+
+.entry__content p {
+  max-width: 600px;
+  margin: 0 auto 1em;
+  line-height: 1.45;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.entry__meta {
+  text-align: center;
+  //padding-bottom: 1em;
+  //border-bottom: 2px solid $secondary;
+}
+
+.comments-link a {
+  color: gray;
+  font-family: $headline;
+  text-transform: lowercase;
+  display: inline-block;
+  border: 1px solid $secondary;
+  padding: .5em 1em;
+}
+
+.comments-link a:hover {
+  background: $highlight;
+  border: 1px solid $highlight;
+  color: white;
+}
