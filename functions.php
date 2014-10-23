@@ -139,19 +139,11 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-
-
-////Remove unnessary Yarp code
-function my_theme_deregister_plugin_assets_header() {
-  wp_dequeue_style('yarppWidgetCss');
-  wp_deregister_style('yarppRelatedCss');
+//Add read more to excerpt
+function new_excerpt_more( $more ) {
+	return '... <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read more', 'your-text-domain') . '</a>';
 }
-add_action( 'wp_print_styles', 'my_theme_deregister_plugin_assets_header' );
-
-function my_theme_deregister_plugin_assets_footer() {
-  wp_dequeue_style('yarppRelatedCss');
-}
-add_action( 'wp_footer', 'my_theme_deregister_plugin_assets_footer' );
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 
 ////////////////////////
@@ -162,9 +154,10 @@ add_action( 'wp_footer', 'my_theme_deregister_plugin_assets_footer' );
 function kandrblog_scripts() {
   wp_enqueue_style( 'kandrblog-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
   wp_enqueue_script( 'kandrblog-nav',  get_template_directory_uri() . '/assets/js/responsive-nav.min.js', '', '', true);
-  //wp_enqueue_script( 'kandrblog-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
+  wp_enqueue_script( 'kandrblog-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
   wp_enqueue_script( 'kandrblog-global',  get_template_directory_uri() . '/assets/js/global.js', '', '', true);
-  //wp_enqueue_script( 'kandrblog-foundation',  get_template_directory_uri() . '/bower_components/foundation/js/foundation.min.js', '', '', true);
+  wp_enqueue_script( 'kandrblog-foundation',  get_template_directory_uri() . '/bower_components/foundation/js/foundation.min.js', '', '', true);
+  wp_enqueue_script( 'kandrblog-foundation-mg',  get_template_directory_uri() . '/bower_components/foundation/js/foundation/foundation.magellan.js', '', '', true);
   //wp_enqueue_script( 'kandrblog-modernizr',  get_template_directory_uri() . '/assets/js/modernizr.min.js');
   //wp_enqueue_script( 'kandrblog-global-script',  get_template_directory_uri() . '/assets/js/global.min.js', '', '', true);
 }

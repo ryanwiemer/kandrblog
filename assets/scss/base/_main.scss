@@ -9,5 +9,8 @@ body {
 .container {
   max-width: $container;
   padding: 0 1em;
-  margin: 400px auto 0;
+  margin: 100px auto 0;
+  @include bp(medium) {
+    //padding: 0;
+  }
 }

@@ -2,27 +2,33 @@
  *   MENU  *
  * ------- */
 
+.site-logo {
+
+}
+
+.site-header--shrink .site-logo {
+
+}
+
+
+
 .site-header {
   min-height: 60px;
   line-height: 60px;
   font-size: 14px;
-  letter-spacing: 2px;
-  background: white;
-  background: rgba(255,255,255, .95);
-  border-bottom: 1px solid $secondary;
+  background: lighten($tertiary, 2%);
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   overflow: hidden;
   z-index: 10000;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  @include bp(medium) {
-    min-height: 100px;
-    line-height: 100px;
-  }
+  //@include bp(medium) {
+    //min-height: 100px;
+    //line-height: 100px;
+  //}
 }
 
 .site-header--shrink {
@@ -31,11 +37,11 @@
 }
 
 .site-header__nav {
-  //max-width: $container;
+  max-width: $container;
   margin: 60px auto 0;
   @include bp(medium) {
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 1em;
   }
 }
 
@@ -56,6 +62,7 @@
 }
 
 .site-header__nav ul li {
+  letter-spacing: 2px;
   font-family: $headline;
   text-transform: uppercase;
   line-height: 60px;
@@ -73,7 +80,6 @@
   color: $base;
   padding-bottom: 3px;
   display: block;
-  //border-bottom: 2px solid $highlight;
 }
 
 .site-header__nav ul li a:hover {
@@ -81,7 +87,7 @@
   background: $secondary;
   @include bp(medium) {
     background: none;
-    color: $highlight;
+    //text-decoration: underline;
   }
 }
 
@@ -89,7 +95,7 @@
   color: $base;
   text-transform: uppercase;
   float: right;
-  padding-right: 1em;
+  padding-right: .75em;
   font-family: 'icons';
   font-size: 18px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);

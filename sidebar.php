@@ -6,6 +6,7 @@
  */
 
 ?>
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar('sidebar-1'); ?>
-</div><!-- #secondary .widget-area -->
+<div class="sidebar" role="complementary">
+  <div class="sidebar__inner">
+  </div>
+</div><!-- .sidebar -->

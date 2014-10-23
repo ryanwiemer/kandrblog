@@ -1,0 +1,19 @@
+/* ------------------ *
+ *         BTN        *
+ * ------------------ */
+
+.btn, .comments-link a {
+  color: gray;
+  font-family: $headline;
+  text-transform: lowercase;
+  display: inline-block;
+  border: 2px solid $secondary;
+  border-radius: 2px;
+  padding: .5em 1em;
+}
+
+.btn:hover, .comments-link a:hover {
+  background: $base;
+  border: 2px solid $base;
+  color: white;
+}

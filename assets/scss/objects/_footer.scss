@@ -3,7 +3,8 @@
  * ------- */
 
 .site-footer {
-  background: $tertiary;
+  background: $base;
   width: 100%;
-  height: 100px;
+  height: 140px;
+  @include span-columns(12);
 }

@@ -104,40 +104,14 @@ var nav = responsiveNav(".site-header__nav", { // Selector
 
 
 
+//fixed sidebar
 
-//
+//if (screen.width >= 960) {
+$(function(){
+  $('.sidebar__inner').width($('.sidebar').outerWidth());
+});
 
-var cbpAnimatedHeader = (function() {
-
-    var docElem = document.documentElement,
-        header = document.querySelector( '.site-header' ),
-        didScroll = false,
-        changeHeaderOn = 300;
-
-    function init() {
-        window.addEventListener( 'scroll', function( event ) {
-            if( !didScroll ) {
-                didScroll = true;
-                setTimeout( scrollPage, 250 );
-            }
-        }, false );
-    }
-
-    function scrollPage() {
-        var sy = scrollY();
-        if ( sy >= changeHeaderOn ) {
-            classie.add( header, 'site-header--shrink' );
-        }
-        else {
-            classie.remove( header, 'site-header--shrink' );
-        }
-        didScroll = false;
-    }
-
-    function scrollY() {
-        return window.pageYOffset || docElem.scrollTop;
-    }
-
-    init();
-
-})();
+window.onresize = function(event) {
+  $('.sidebar__inner').width($('.sidebar').outerWidth());
+};
+//}

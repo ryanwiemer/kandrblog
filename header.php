@@ -16,6 +16,7 @@
 <body <?php body_class(); ?>>
 <header class="site-header">
       <nav class="site-header__nav">
+        <div class ="site-logo"></div>
             <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => 'ul', 'menu_class' => '', 'container_class' => '') ); ?>
       </nav>
 </header>

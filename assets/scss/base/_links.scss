@@ -4,3 +4,9 @@
 a {
   text-decoration: none;
 }
+
+
+.entry__content p a {
+  color: blue;
+  border-bottom: 2px solid $secondary;
+}

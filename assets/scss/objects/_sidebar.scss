@@ -1,0 +1,21 @@
+/* ------------------ *
+ *      SIDEBAR       *
+ * ------------------ */
+
+
+.sidebar {
+  @include span-columns(12);
+  @include bp(medium) {
+  @include span-columns(4);
+}
+}
+
+.sidebar__inner {
+  height: 400px;
+  background: $base;
+  margin-bottom: 2em;
+  position: relative;
+  @include bp(medium) {
+    position: fixed;
+  }
+}

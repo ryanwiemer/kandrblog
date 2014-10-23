@@ -11,6 +11,7 @@
 get_header(); ?>
 
 <div class="container">
+	<?php get_sidebar(); ?>
 
 	<?php if ( have_posts() ) : ?>
 
@@ -21,8 +22,6 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<?php get_template_part( 'inc/pagination' ); ?>
-
 	<?php else : ?>
 
 		<?php get_template_part( 'content', 'none' ); ?>
@@ -30,5 +29,7 @@ get_header(); ?>
 	<?php endif; ?>
 
 </div><!-- .container -->
-<?php get_sidebar(); ?>
+<div class="page-nav">
+	<?php posts_nav_link(' ','Newer Posts &#8594;','&#8592; Older Posts'); ?>
+</div>
 <?php get_footer(); ?>

@@ -1,0 +1,38 @@
+/* ------------------ *
+ *      PAGE-NAV      *
+ * ------------------ */
+
+.page-nav {
+  margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+.btn-pagination {
+  color: darken($secondary,25%);
+  background: $tertiary;
+  font-family: $headline;
+  padding: 1em;
+  text-align: center;
+}
+
+.btn-pagination:hover {
+  color: white;
+  background: $base;
+}
+
+
+.btn-pagination--prev {
+width: 50%;
+float: right;
+border-left: 2px solid white;
+}
+
+.btn-pagination--next {
+  width: 50%;
+  float: left;
+}
