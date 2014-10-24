@@ -4,10 +4,7 @@
 
 
 .sidebar {
-  @include span-columns(12);
-  @include bp(medium) {
-  @include span-columns(4);
-}
+
 }
 
 .sidebar__inner {
@@ -17,5 +14,7 @@
   position: relative;
   @include bp(medium) {
     position: fixed;
+    width: 29.40392%;
+    max-width: 282px;
   }
 }

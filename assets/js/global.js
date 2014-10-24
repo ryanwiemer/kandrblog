@@ -106,7 +106,7 @@ var nav = responsiveNav(".site-header__nav", { // Selector
 
 //fixed sidebar
 
-//if (screen.width >= 960) {
+/*!//if (screen.width >= 960) {
 $(function(){
   $('.sidebar__inner').width($('.sidebar').outerWidth());
 });
@@ -114,4 +114,4 @@ $(function(){
 window.onresize = function(event) {
   $('.sidebar__inner').width($('.sidebar').outerWidth());
 };
-//}
+//} */
