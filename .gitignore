@@ -22,3 +22,22 @@ Thumbs.db
 *.sass-cache
 *.ruby-version
 node_modules
+
+
+# Node Modules
+node_modules/*
+node_modules
+npm-debug.log
+
+# Generated Stuff
+.sass-cache
+.sass-cache/*
+
+# Not-Needed System Files
+*.sw?
+*.swp
+*.bak
+
+#Bower
+bower_components
+bower_components/*
