@@ -3,8 +3,8 @@
  * ------------------ */
 
 .sidebar {
-  height: 400px;
-  background: gray;
+  height: 200px;
+  //background: gray;
   margin-bottom: 2em;
   position: relative;
   @include bp(medium) {

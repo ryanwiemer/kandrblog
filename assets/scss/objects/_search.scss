@@ -1,0 +1,43 @@
+/* ------------------ *
+ *      SEARCH       *
+ * ------------------ */
+
+.site-header__nav ul li a[title="search"]{
+  display: none;
+  @include bp(medium) {
+  display: block;
+  font-family: "icons";
+  position: relative;
+  visibility: hidden;
+  }
+}
+
+.site-header__nav ul li a[title="search"]:after {
+  @include bp(medium) {
+    cursor: pointer;
+    font-size: .85em;
+    visibility: visible;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+    content: "\e601";
+  }
+}
+
+
+
+
+//Search Form
+#searchform {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  @include bp(medium) {
+    display: none;
+  }
+}
+
+.searchform--fullscreen {
+  display: block!important;
+  z-index: 10000;
+}

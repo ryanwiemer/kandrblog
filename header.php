@@ -15,8 +15,9 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="site-header">
-      <nav class="site-header__nav">
-        <div class ="site-logo"></div>
-            <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => 'ul', 'menu_class' => '', 'container_class' => '') ); ?>
-      </nav>
+  <a href="<?php echo get_site_url() ?>"><h1 class="site-logo">K&amp;R Blog</h1></a>
+  <nav class="site-header__nav">
+    <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => false, 'menu_class' => '', 'container_class' => '') ); ?>
+  <?php get_search_form( ); ?> 
+  </nav>
 </header>

@@ -22,14 +22,5 @@
 	<footer class="entry__meta">
 		<ul class="entry__categories">
 			<?php wp_list_categories('title_li='); ?>
-		</ul>
-
-		<div class="comments-link">
-			<?php comments_popup_link(
-				__( 'Leave a comment', 'themeTextDomain' ),
-				__( '1 comment', 'themeTextDomain' ),
-				__( '% comments', 'themeTextDomain' ) );
-			?>
-		</div>
-	</footer><!-- .entry__meta -->
+		</ul>	</footer><!-- .entry__meta -->
 </article><!-- article -->

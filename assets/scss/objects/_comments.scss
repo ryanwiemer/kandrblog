@@ -5,3 +5,15 @@
 .comments-link {
   margin-top: 1em;
 }
+
+.comments-link a:hover {
+  background: $highlight;
+  border-color: $highlight;
+}
+
+.comments {
+  @include span-columns(8);
+  @include shift(4);
+  @extend %clearfix;
+  margin-bottom: 2em;
+}

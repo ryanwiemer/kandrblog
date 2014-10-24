@@ -8,12 +8,6 @@
   border-top: 2px solid $secondary;
 }
 
-
-
-
-
-
-
 .btn-pagination {
   color: darken($secondary,25%);
   background: $tertiary;
@@ -24,14 +18,13 @@
 
 .btn-pagination:hover {
   color: white;
-  background: $base;
+  background: $highlight;
 }
 
-
 .btn-pagination--prev {
-width: 50%;
-float: right;
-border-left: 2px solid $secondary;
+  width: 50%;
+  float: right;
+  border-left: 2px solid $secondary;
 }
 
 .btn-pagination--next {

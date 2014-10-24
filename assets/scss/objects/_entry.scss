@@ -24,12 +24,18 @@ article {
 
 .entry__title a {
   color: $base;
-  border-bottom: 2px solid $secondary;
+  border-bottom: 2px solid $highlight;
+}
+
+.entry__title a:hover {
+  color: lighten($base, 20%);
 }
 
 .entry__date {
-  //float: left;
+  font-family: $headline;
 }
+
+
 
 
 
@@ -81,7 +87,8 @@ article img {
 }
 
 .entry__categories li {
-  display: inline;
+  display: inline-block;
+  margin-bottom: .35em;
 }
 
 .entry__categories a {

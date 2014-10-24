@@ -103,15 +103,7 @@ var nav = responsiveNav(".site-header__nav", { // Selector
 });
 
 
-
-//fixed sidebar
-
-/*!//if (screen.width >= 960) {
-$(function(){
-  $('.sidebar__inner').width($('.sidebar').outerWidth());
+$(".site-header__nav ul li:last-child").click(
+  function() {
+  $("#searchform").addClass("searchform--fullscreen");
 });
-
-window.onresize = function(event) {
-  $('.sidebar__inner').width($('.sidebar').outerWidth());
-};
-//} */
