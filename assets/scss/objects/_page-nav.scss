@@ -3,7 +3,9 @@
  * ------------------ */
 
 .page-nav {
-  margin-bottom: 2em;
+  width: 100%;
+  @extend %clearfix;
+  border-top: 2px solid $secondary;
 }
 
 
@@ -29,10 +31,11 @@
 .btn-pagination--prev {
 width: 50%;
 float: right;
-border-left: 2px solid white;
+border-left: 2px solid $secondary;
 }
 
 .btn-pagination--next {
   width: 50%;
   float: left;
+  border-right: 2px solid $secondary;
 }

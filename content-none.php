@@ -7,13 +7,13 @@
 ?>
 
 <article class="post no-results not-found">
-	<header class="entry-header">
-		<h1 class="entry-title"><?php _e( 'Nothing Found', 'themeTextDomain' ); ?></h1>
-	</header><!-- .entry-header -->
+	<header class="entry__header">
+		<h1 class="entry__title"><?php _e( 'Nothing Found', 'themeTextDomain' ); ?></h1>
+	</header><!-- .entry__header -->
 
-	<div class="entry-content">
+	<div class="entry__content">
 		<?php if ( is_archive() ) : ?>
-		
+
 			<p><?php _e( 'There are no published posts for this archive. Try searching using keywords instead.', 'themeTextDomain' ); ?></p>
 			<?php get_search_form(); ?>
 
@@ -28,5 +28,5 @@
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-	</div><!-- .entry-content -->
+	</div><!-- .entry__content -->
 </article>

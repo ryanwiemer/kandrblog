@@ -21,7 +21,7 @@
   </div><!-- .entry__content -->
 
   <footer class="entry__meta">
-    <ul class="entry-categories">
+    <ul class="entry__categories">
       <?php wp_list_categories('title_li='); ?>
     </ul>
 
@@ -32,5 +32,5 @@
         __( '% comments', 'themeTextDomain' ) );
       ?>
     </div>
-  </footer><!-- #entry__meta -->
-</article><!-- #post-<?php the_ID(); ?> -->
+  </footer><!-- .entry__meta -->
+</article><!-- article -->

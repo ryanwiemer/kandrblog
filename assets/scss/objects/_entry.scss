@@ -1,7 +1,7 @@
 /* ------------------ *
  *   ENTRY (ARTICLE)  *
  * ------------------ */
- 
+
 article {
   margin: 0 auto 3em;
   @include bp(medium) {
@@ -72,7 +72,7 @@ article img {
 .entry__meta {
 }
 
-.entry-categories {
+.entry__categories {
   font-family: $headline;
 }
 
@@ -80,11 +80,11 @@ article img {
   margin-bottom: 1em;
 }
 
-.entry-categories li {
+.entry__categories li {
   display: inline;
 }
 
-.entry-categories a {
+.entry__categories a {
   font-size: .8em;
   display: inline-block;
   background: $tertiary;
@@ -93,17 +93,7 @@ article img {
   border-radius: 2px;
 }
 
-.entry-categories a:hover {
+.entry__categories a:hover {
   color: white;
   background: $base;
-}
-
-
-
-
-
-
-
-.comments-link {
-  margin-top: 1em;
 }

@@ -156,10 +156,7 @@ function kandrblog_scripts() {
   wp_enqueue_script( 'kandrblog-nav',  get_template_directory_uri() . '/assets/js/responsive-nav.min.js', '', '', true);
   wp_enqueue_script( 'kandrblog-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
   wp_enqueue_script( 'kandrblog-global',  get_template_directory_uri() . '/assets/js/global.js', '', '', true);
-  wp_enqueue_script( 'kandrblog-foundation',  get_template_directory_uri() . '/bower_components/foundation/js/foundation.min.js', '', '', true);
-  wp_enqueue_script( 'kandrblog-foundation-mg',  get_template_directory_uri() . '/bower_components/foundation/js/foundation/foundation.magellan.js', '', '', true);
   //wp_enqueue_script( 'kandrblog-modernizr',  get_template_directory_uri() . '/assets/js/modernizr.min.js');
-  //wp_enqueue_script( 'kandrblog-global-script',  get_template_directory_uri() . '/assets/js/global.min.js', '', '', true);
 }
 
 add_action( 'wp_enqueue_scripts', 'kandrblog_scripts');

@@ -2,14 +2,9 @@
  *      SIDEBAR       *
  * ------------------ */
 
-
 .sidebar {
-
-}
-
-.sidebar__inner {
   height: 400px;
-  background: $base;
+  background: gray;
   margin-bottom: 2em;
   position: relative;
   @include bp(medium) {
