@@ -12,3 +12,7 @@ body {
   margin: 100px auto 0;
   @extend %clearfix;
 }
+
+textarea:focus, input:focus{
+    outline: 0;
+}
