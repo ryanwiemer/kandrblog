@@ -18,7 +18,8 @@ var nav = responsiveNav(".site-header__nav", { // Selector
 //Search JS
 $(".site-header__nav ul li:last-child").click(
   function() {
-  $(".search-form").addClass("search-form--fullscreen");
+  $(".search-form").addClass("search-form--fullscreen")
+  $(".search-form__field").focus();
 });
 
 $(".search-form__close").click(

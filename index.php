@@ -1,11 +1,6 @@
 <?php
 /**
- * Main Template File
- *
- * This file is used to display a page when nothing more specific matches a query.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package themeHandle
+ * Index
  */
 
 get_header(); ?>

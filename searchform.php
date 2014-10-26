@@ -1,12 +1,13 @@
 <?php
 /**
- * Search form template
- *
- * @package themeHandle
+ * Search Form Template
  */
 ?>
 <form method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<input type="text" class="search-form__field" autocomplete="off" name="s" id="s" placeholder="start typing.." />
-	<input type="submit" class="search-from__submit" name="submit"value="search" />
 	<div class="search-form__close">X</div>
+	<div class="search-form__inner">
+		<input type="text" class="search-form__field" autocomplete="off" name="s" id="s" placeholder="Type search term..." />
+		<input type="submit" class="search-from__submit" name="submit"value="search" />
+		<p class="search-form__prompt">To search type above and press enter</p>
+	</div>
 </form>

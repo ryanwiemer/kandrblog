@@ -1,6 +1,6 @@
 <?php
 /**
- * K&R Blog theme functions
+ * K&R Blog Theme Functions
  *
  */
 

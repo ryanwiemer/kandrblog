@@ -1,18 +1,18 @@
 <?php
 /**
- * The template for displaying Search Results pages.
- *
- * @package themeHandle
+ * Search Page Template
  */
 
 get_header(); ?>
 
 <div class="container">
 
+	<?php get_sidebar(); ?>
+
 	<?php if ( have_posts() ) : ?>
 
-		<header class="page-header">
-			<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'themeTextDomain' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+		<header class="search__header">
+			<h2 class="search__title"><?php printf( __( 'Search Results for: %s', 'themeTextDomain' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 		</header>
 
 		<?php /* Start the Loop */ ?>
@@ -24,15 +24,17 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<?php get_template_part( 'inc/pagination' ); ?>
-
 	<?php else : ?>
 
 		<?php get_template_part( 'content', 'none' ); ?>
 
 	<?php endif; ?>
 
-</section><!-- .container -->
+</div><!-- .container -->
 
-<?php get_sidebar(); ?>
+<div class="page-nav">
+	<?php posts_nav_link(' ','Newer Posts &#8594;','&#8592; Older Posts'); ?>
+</div>
+
+
 <?php get_footer(); ?>

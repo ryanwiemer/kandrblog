@@ -1,8 +1,6 @@
 <?php
 /**
- * Single post template
- *
- * @package themeHandle
+ * Single Template
  */
 
 get_header(); ?>
