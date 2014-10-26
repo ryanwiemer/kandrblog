@@ -20,10 +20,6 @@ body{
   }
 }
 
-
-
-
-
 //Icon Fonts
 @font-face {
 	font-family: 'icons';
@@ -44,27 +40,11 @@ body{
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-uniE600:before {
-	content: "\e600";
-}
-.icon-uniF053:before {
-	content: "\f053";
-}
-.icon-uniF054:before {
-	content: "\f054";
-}
-.icon-uniF0C9:before {
-	content: "\f0c9";
-}
-.icon-search:before {
-	content: "\e601";
-}
 .icon-instagram:before {
 	content: "\e602";
 }

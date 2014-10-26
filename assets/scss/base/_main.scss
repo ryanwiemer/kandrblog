@@ -3,15 +3,25 @@
  * ------- */
 
 body {
-
 }
 
 .container {
   max-width: $container;
-  padding: 0 1em;
+  padding: 0 1.5em;
   margin: 100px auto 0;
   @extend %clearfix;
 }
+
+.main {
+  margin-top: 2em;
+  @include bp(medium) {
+    margin-top: 0;
+    @include span-columns(8);
+    @include omega();
+  }
+}
+
+
 
 textarea:focus, input:focus{
     outline: 0;

@@ -3,13 +3,57 @@
  * ------------------ */
 
 .sidebar {
-  height: 200px;
-  //background: gray;
-  margin-bottom: 2em;
-  position: relative;
+  //margin: 0 0 2em .5em;
+  //position: relative;
   @include bp(medium) {
-    position: fixed;
-    width: 29.40392%;
-    max-width: 282px;
+    position: relative;
+    top: 12px;
+    @extend %clearfix;
+    @include span-columns(4);
+    //position: fixed;
+    //top: 115px;
+    //width: 29.40392%;
+    //max-width: 282px;
   }
+}
+
+.sidebar__title {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  float: left;
+}
+
+.sidebar__img {
+  border-radius: 2px;
+  background: url('../img/bio.jpg');
+  background-size: cover;
+  background-position: center left;
+  height: 300px;
+  margin-bottom: 1em;
+}
+
+.sidebar__social {
+  margin: 1em 0 0 0;
+}
+
+.sidebar__social [class*="icon-"] {
+  margin-right: 1em;
+}
+
+.sidebar a {
+  font-size: 14px;
+  border-radius:2px;
+  width: 100%;
+  float: left;
+  background: $tertiary;
+  color: darken($secondary,25%);
+  padding: .5em 1em;
+  margin: .25em 0;
+}
+
+.sidebar a:hover {
+  background: $base;
+  color: white;
 }

@@ -4,15 +4,12 @@
 
 article {
   margin: 0 auto 3em;
-  @include bp(medium) {
-    @include shift(4);
-    @include span-columns(8);
+  width: 100%;
 }
 
 .entry__header {
   margin:0 auto 1em;
-  @extend %clearfix;
-  }
+  //@extend %clearfix;
 }
 
 .entry__title {
@@ -96,7 +93,7 @@ article img {
   display: inline-block;
   background: $tertiary;
   color: gray;
-  padding: .5em .5em;
+  padding: .5em;
   border-radius: 2px;
 }
 

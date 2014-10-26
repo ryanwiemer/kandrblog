@@ -94,7 +94,7 @@
     width: 100%;
     color: $highlight;
     font-family: $headline;
-    font-size: 3em;
+    font-size: 2em;
     letter-spacing: 2px;
     padding-bottom: .15em;
     border: 2px solid darken($base, 5%);
@@ -124,7 +124,7 @@
   display: none;
   @include bp(medium) {
     color: darken($base, 5%);
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: normal;
     font-family: $headline;
     display: inline-block;
@@ -135,7 +135,7 @@
     border: 2px solid darken($base, 5%);
     border-radius: 2px;
     line-height: 1;
-    padding: .75em  1em;
+    padding: .5em  .75em;
   }
 }
 
@@ -165,7 +165,7 @@
   display: inline-block;
   position : absolute;
   width: 600px;
-  height: 120px;
+  height: 100px;
   left: 50%;
   top: 50%;
   margin-left: -300px; /* half of the width  */

@@ -8,6 +8,7 @@ get_header(); ?>
 <div class="container">
 
 	<?php get_sidebar(); ?>
+	<div class="main">
 
 	<?php if ( have_posts() ) : ?>
 
@@ -61,6 +62,7 @@ get_header(); ?>
 		<?php get_template_part( 'content', 'none' ); ?>
 
 	<?php endif; ?>
+</div>
 
 </div><!-- .container -->
 <div class="page-nav">
