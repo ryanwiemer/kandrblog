@@ -4,10 +4,9 @@
 
 //Serch Results Page
 .search__header, .archive__header {
-  margin: 0 0 3em 0;
+  margin: 0 0 2em 0;
   @include bp(medium) {
-    @include shift(4);
-    @include span-columns(8);
+    @include span-columns(12);
   }
 }
 
@@ -16,8 +15,8 @@
 }
 
 .search__title span, .archive__title span {
-  color: $base;
-  background: $secondary;
+  color: white;
+  background: $highlight;
   border-radius: 2px;
   padding: 0 .5em;
 }
