@@ -3,10 +3,8 @@
  * ------- */
 
 //Font Families
-
 $headline: "freight-sans-pro", "Helvetica", sans-serif;
 $body: "freight-text-pro","Georgia", serif;
-
 
 html {
   color: $base;
@@ -48,9 +46,16 @@ body{
 .icon-instagram:before {
 	content: "\e602";
 }
+
 .icon-twitter:before {
 	content: "\e603";
 }
+
 .icon-pinterest:before {
 	content: "\e604";
+}
+
+.icon-bloglovin:before {
+  content: "\e600";
+  font-size: 1.15em;
 }
