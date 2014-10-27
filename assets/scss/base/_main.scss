@@ -8,7 +8,7 @@ body {
 .container {
   max-width: $container;
   padding: 0 1.5em;
-  margin: 100px auto 0;
+  margin: 100px auto 2em;
   @extend %clearfix;
 }
 
@@ -16,9 +16,22 @@ body {
   margin-top: 2em;
   @include bp(medium) {
     margin-top: 0;
-    @include span-columns(8);
-    @include omega();
+    @include span-columns(9);
+    //@include omega();
   }
+}
+
+.page__content {
+  @include bp(medium) {
+    margin-top: 0;
+    @include span-columns(9);
+    //@include omega();
+  }
+}
+
+.page__content p {
+  margin: 0 auto 1em;
+  line-height: 1.45;
 }
 
 

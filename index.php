@@ -6,7 +6,6 @@
 get_header(); ?>
 
 <div class="container">
-	<?php get_sidebar(); ?>
 	<div class="main">
 
 	<?php if ( have_posts() ) : ?>
@@ -24,7 +23,8 @@ get_header(); ?>
 
 	<?php endif; ?>
 
-</div><!-- main -->
+	</div><!-- main -->
+	<?php get_sidebar(); ?>
 </div><!-- .container -->
 <div class="page-nav">
 	<?php posts_nav_link(' ','Newer Posts &#8594;','&#8592; Older Posts'); ?>

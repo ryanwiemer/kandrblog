@@ -2,7 +2,7 @@
 //$visual-grid: true;
 //$visual-grid-opacity: 0.1;
 //$visual-grid-color: yellow;
-$gutter: 2em;
+$gutter: 6em;
 
 @import "../../bower_components/bourbon/dist/bourbon";
 @import "../../bower_components/neat/app/assets/stylesheets/neat";
@@ -35,3 +35,6 @@ $gutter: 2em;
 @import "objects/_sidebar";
 @import "objects/_comments";
 @import "objects/_search";
+@import "objects/_about";
+@import "objects/_404";
+@import "objects/_faq";

@@ -3,13 +3,16 @@
  * ------------------ */
 
 article {
-  margin: 0 auto 3em;
+  margin: 0 auto 2em;
   width: 100%;
+}
+
+article:last-child {
+  margin-bottom: 0;
 }
 
 .entry__header {
   margin:0 auto 1em;
-  //@extend %clearfix;
 }
 
 .entry__title {

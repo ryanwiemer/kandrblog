@@ -18,7 +18,7 @@ var nav = responsiveNav(".site-header__nav", { // Selector
 //Search JS
 $(".site-header__nav ul li:last-child").click(
   function() {
-  $(".search-form").addClass("search-form--fullscreen")
+  $(".search-form").addClass("search-form--fullscreen");
   $(".search-form__field").focus();
 });
 
@@ -27,3 +27,10 @@ $(".search-form__close").click(
     $(".search-form").removeClass("search-form--fullscreen");
   }
 );
+
+
+//Archives dropdown
+$(".sidebar__archives__trigger").click(
+  function() {
+  $(".sidebar__archives__dropdown").toggleClass("sidebar__archives__dropdown--open");
+});

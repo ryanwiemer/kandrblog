@@ -7,12 +7,11 @@ get_header(); ?>
 
 <div class="container">
 
-	<?php get_sidebar(); ?>
 <div class="main">
 	<?php if ( have_posts() ) : ?>
 
 		<header class="search__header">
-			<h2 class="search__title"><?php printf( __( 'Search Results for: %s', 'themeTextDomain' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
+			<h2 class="search__title page__title"><?php printf( __( 'Search Results for: %s', 'themeTextDomain' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 		</header>
 
 		<?php /* Start the Loop */ ?>
@@ -31,6 +30,7 @@ get_header(); ?>
 	<?php endif; ?>
 
 </div>
+<?php get_sidebar(); ?>
 
 </div><!-- .container -->
 

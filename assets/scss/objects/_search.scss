@@ -10,10 +10,6 @@
   }
 }
 
-.search__title, .archive__title {
-  font-size: 2em;
-}
-
 .search__title span, .archive__title span {
   color: white;
   background: $highlight;
@@ -62,6 +58,7 @@
 .search-from__submit {
   text-transform: uppercase;
   -webkit-appearance: none;
+  -moz-appearance: none;
   border: 0;
   background: none;
   border: 2px solid $secondary;
@@ -85,6 +82,7 @@
   padding: .75em;
   width: 50%;
   -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: 2px;
   background: none;
   border-radius: 2px;;

@@ -1,0 +1,40 @@
+/* ------- *
+ *   FAQ   *
+ * ------- */
+
+ .faq {
+    line-height: 1.45;
+ }
+
+ .faq__header {
+   margin-bottom: 1.5em;
+ }
+
+ .faq__question {
+   font-family: $headline;
+   font-weight: bold;
+   margin-bottom: 1em;
+ }
+
+ .faq__question:before {
+   content: "Q:";
+   background: darken($secondary,25%);
+   color: white;
+   border-radius: 2px;
+   padding: .1em.25em;
+   margin-right: .5em;
+   width: 2.5em;
+ }
+
+.faq__answer {
+  margin: 0 auto 2em;
+}
+
+.faq__answer:before {
+  content: "A:";
+  background: $highlight;
+  color: white;
+  border-radius: 2px;
+  padding: .1em.25em;
+  margin-right: .5em;
+}

@@ -3,54 +3,117 @@
  * ------------------ */
 
 .sidebar {
-  //margin: 0 0 2em .5em;
-  //position: relative;
+  margin-top: 2em;
   @include bp(medium) {
-    position: relative;
-    top: 12px;
-    @extend %clearfix;
-    @include span-columns(4);
-    //position: fixed;
-    //top: 115px;
-    //width: 29.40392%;
-    //max-width: 282px;
+    @include span-columns(3);
+    margin-top: .5em;
   }
 }
 
 .sidebar__title {
+  color: darken($secondary,25%);
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 14px;
   float: left;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
+  font-weight: bold;
 }
 
 .sidebar__img {
-  display: none;
+  display: block;
   border-radius: 2px;
   background: url('../img/bio.jpg');
   background-size: cover;
-  background-position: center left;
-  height: 300px;
-  margin-bottom: 1em;
+  background-position: center center;
+  height: 230px;
 }
 
-.sidebar a {
+.sidebar__img__container {
+  display: none;
+  @include bp(medium) {
+    display: block;
+    border-radius: 2px;
+    border: 2px solid $secondary;
+    padding: .25em;
+    margin-bottom: 1em;
+  }
+}
+
+.sidebar__social a {
   text-align: center;
   font-size: 14px;
   border-radius:2px;
   @include span-columns (6);
-  width: 48.62693%;
-
   @include omega(2n);
   background: $tertiary;
   color: darken($secondary,25%);
   padding: .5em 1em;
-  margin-bottom: 2.74614%;
+  margin-bottom: .5em;
+  margin-right: .5em;
 }
 
-.sidebar a:hover {
+.sidebar__social a:hover {
   background: $base;
   color: white;
+}
+.sidebar__archives {
+  font-family: $headline;
+  width: 100%;
+  float: left;
+  margin-top: 1em;
+}
+
+.sidebar__archives__dropdown {
+  display: none;
+}
+
+.sidebar__archives__dropdown--open {
+  display: block;
+}
+
+.sidebar__archives__dropdown a {
+  color: darken($secondary,25%);
+  font-size: 14px;
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid $secondary;
+  border-left: 2px solid $secondary;
+  border-right: 2px solid $secondary;
+  border-radius: 2px;
+  background: $tertiary;
+  background: none;
+  padding: .5em 1em;
+}
+
+.sidebar__archives span {
+  float: right;
+  color: darken($secondary,15%);
+  font-size: .75em;
+  position: relative;
+  top: 2px;
+}
+
+.sidebar__archives__trigger {
+  cursor: pointer;
+  color: darken($secondary,25%);
+  font-size: 14px;
+  float: left;
+  width: 100%;
+  border: 2px solid $secondary;
+  border-radius: 2px;
+  background: $tertiary;
+  background: none;
+  padding: .5em 1em;
+}
+
+.sidebar__archives select:focus {
+  outline: 0;
+}
+
+.sidebar__archives select:hover {
+  background: $highlight;
+  color: white;
+  border-color: $highlight;
 }

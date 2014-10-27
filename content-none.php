@@ -7,8 +7,8 @@
 ?>
 
 <article class="no-results not-found">
-	<header class="entry__header">
-		<h2 class="entry__title"><?php _e( 'Nothing Found', 'themeTextDomain' ); ?></h2>
+	<header class="none__header">
+		<h2 class="page__title"><?php _e( 'Nothing Found', 'themeTextDomain' ); ?></h2>
 	</header><!-- .entry__header -->
 
 	<div class="entry__content">

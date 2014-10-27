@@ -6,14 +6,12 @@
 get_header(); ?>
 
 <div class="container">
-
-	<?php get_sidebar(); ?>
 	<div class="main">
 
 	<?php if ( have_posts() ) : ?>
 
 		<header class="archive__header">
-			<h2 class="archive__title">
+			<h2 class="archive__title page__title">
 				 <?php
             if ( is_category() ) {
                 printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' );
@@ -63,7 +61,7 @@ get_header(); ?>
 
 	<?php endif; ?>
 </div>
-
+<?php get_sidebar(); ?>
 </div><!-- .container -->
 <div class="page-nav">
 	<?php posts_nav_link(' ','Newer Posts &#8594;','&#8592; Older Posts'); ?>
