@@ -2,10 +2,6 @@
  *   FAQ   *
  * ------- */
 
- .faq {
-    line-height: 1.45;
- }
-
  .faq__header {
    margin-bottom: 1.5em;
  }
@@ -16,13 +12,13 @@
    margin-bottom: 1em;
  }
 
- .faq__question:before {
+ .faq__question p:first-child:before {
    content: "Q:";
    background: darken($secondary,25%);
    color: white;
    border-radius: 2px;
-   padding: .1em.25em;
-   margin-right: .5em;
+   padding: .1em .25em;
+   margin-right: .25em;
    width: 2.5em;
  }
 
@@ -30,11 +26,15 @@
   margin: 0 auto 2em;
 }
 
-.faq__answer:before {
+.faq__answer:last-child {
+  margin-bottom: 0;
+}
+
+.faq__answer p:first-child:before {
   content: "A:";
   background: $highlight;
   color: white;
   border-radius: 2px;
-  padding: .1em.25em;
+  padding: .1em .25em;
   margin-right: .5em;
 }

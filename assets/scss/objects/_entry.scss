@@ -3,7 +3,7 @@
  * ------------------ */
 
 article {
-  margin: 0 auto 2em;
+  margin: 0 auto 3em;
   width: 100%;
 }
 
@@ -35,25 +35,6 @@ article:last-child {
   font-family: $headline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.entry__content {
-}
-
 .entry__content p {
   margin: 0 auto 1em;
   line-height: 1.45;
@@ -61,21 +42,6 @@ article:last-child {
 
 article img {
   margin-bottom: 1em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.entry__meta {
 }
 
 .entry__categories {

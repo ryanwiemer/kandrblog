@@ -11,9 +11,129 @@
   border-color: $highlight;
 }
 
-.comments {
-  @include span-columns(8);
-  @include shift(4);
-  @extend %clearfix;
+
+
+
+//Comments Section
+.comment-reply-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+
+
+
+
+#comments {
   margin-bottom: 2em;
+  border: 2px solid $secondary;
+  border-radius: 2px;
+  @extend %clearfix;
+}
+
+.comment-body {
+  @extend %clearfix;
+}
+
+
+
+
+.odd {
+  background: $tertiary;
+  border-radius: 2px;
+  padding: 1em;
+}
+
+.even {
+  padding: 1em;
+}
+
+
+
+.comment-author {
+  margin-right: .5em;
+  float: left;
+}
+
+.comment-author a {
+  color: $base;
+  border-bottom: 2px solid $highlight;
+}
+
+.comment-author a:hover {
+  color: gray;
+}
+
+
+
+
+.comment-author, .commentmetadata {
+  font-family: $headline;
+}
+
+.commentmetadata {
+  margin-bottom: 1em;
+  float: right;
+}
+
+.commentmetadata a {
+  color: $base;
+}
+
+.comment-body p {
+  float: left;
+  width: 100%;
+}
+
+
+
+
+
+
+.comment-respond, comment-form{
+  float: left;
+  width: 100%;
+}
+
+
+
+
+
+//Comment Form
+.comment-form-author input, .comment-form-email input, .comment-form-url input, .comment-form-message textarea, .form-submit input {
+  background: white;
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid $secondary;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: .5em;
+  font-family: $body;
+  font-size: 1em;
+}
+
+.comment-respond label, .form-submit input {
+  font-family: $headline;
+  color: darken($secondary,25%);
+}
+
+.form-submit input {
+  color: darken($secondary,25%);
+  margin-bottom: 1em;
+  @include bp(medium) {
+    width: 10em;
+  }
+}
+
+.form-submit input:hover {
+  background: $highlight;
+  border-color: $highlight;
+  color: white;
+  cursor: pointer;
+}
+
+.required {
+  color: $highlight;
 }

@@ -15,6 +15,17 @@
   background: $highlight;
   border-radius: 2px;
   padding: 0 .5em;
+  -ms-word-break: break-all;
+
+     /* Be VERY careful with this, breaks normal words wh_erever */
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
 }
 
 //Search in the Menu
@@ -46,7 +57,6 @@
 
 //Search Form
 .search-form {
-  height: 60px;
   text-align: center;
   @include bp(medium) {
     display: block;
