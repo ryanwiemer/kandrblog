@@ -137,3 +137,8 @@
 .required {
   color: $highlight;
 }
+
+.logged-in-as a {
+  color: $base;
+  border-bottom: 2px solid $highlight;
+}

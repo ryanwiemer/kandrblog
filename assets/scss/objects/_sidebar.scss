@@ -4,6 +4,7 @@
 
 .sidebar {
   margin-top: 2em;
+  display: none;
   @include bp(medium) {
     @include span-columns(3);
     margin-top: .5em;
