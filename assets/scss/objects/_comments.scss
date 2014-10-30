@@ -11,19 +11,12 @@
   border-color: $highlight;
 }
 
-
-
-
 //Comments Section
 .comment-reply-title {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1em;
 }
-
-
-
-
 
 #comments {
   margin-bottom: 2em;
@@ -36,9 +29,6 @@
   @extend %clearfix;
 }
 
-
-
-
 .odd {
   background: $tertiary;
   border-radius: 2px;
@@ -48,8 +38,6 @@
 .even {
   padding: 1em;
 }
-
-
 
 .comment-author {
   margin-right: .5em;
@@ -64,9 +52,6 @@
 .comment-author a:hover {
   color: gray;
 }
-
-
-
 
 .comment-author, .commentmetadata {
   font-family: $headline;
@@ -86,22 +71,13 @@
   width: 100%;
 }
 
-
-
-
-
-
 .comment-respond, comment-form{
   float: left;
   width: 100%;
 }
 
-
-
-
-
 //Comment Form
-.comment-form-author input, .comment-form-email input, .comment-form-url input, .comment-form-message textarea, .form-submit input {
+.comment-form input, .comment-form textarea {
   background: white;
   width: 100%;
   border-radius: 2px;
@@ -114,13 +90,27 @@
   font-size: 1em;
 }
 
+.comment-form textarea {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  height: 300px;
+  overflow: auto;
+  resize: none;
+  line-height: 1.45;
+}
+
+.comment-form input:focus, .comment-form textarea:focus {
+  outline: none !important;
+  box-shadow: 0;
+}
+
 .comment-respond label, .form-submit input {
   font-family: $headline;
-  color: darken($secondary,25%);
+  color: gray;
 }
 
 .form-submit input {
-  color: darken($secondary,25%);
+  color: gray;
   margin-bottom: 1em;
   @include bp(medium) {
     width: 10em;

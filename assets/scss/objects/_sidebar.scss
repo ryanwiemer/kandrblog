@@ -13,7 +13,7 @@
 
 .sidebar__title {
   text-align: center;
-  color: darken($secondary,25%);
+  color: gray;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -91,7 +91,7 @@
 
 .sidebar__archives span {
   float: right;
-  color: darken($secondary, 15%);
+  color: darken($secondary, 25%);
   font-size: .75em;
   position: relative;
   top: 2px;
@@ -99,7 +99,7 @@
 
 .sidebar__archives__trigger {
   cursor: pointer;
-  color: darken($secondary,25%);
+  color: gray;
   font-size: 14px;
   float: left;
   width: 100%;

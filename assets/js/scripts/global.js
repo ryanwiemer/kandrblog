@@ -28,7 +28,6 @@ $(".search-form__close").click(
   }
 );
 
-
 //Archives dropdown
 $(".sidebar__archives__trigger").click(
   function() {

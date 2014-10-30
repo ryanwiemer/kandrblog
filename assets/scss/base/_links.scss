@@ -5,8 +5,11 @@ a {
   text-decoration: none;
 }
 
+.entry__content p a, .page__content p a {
+  color: $base;
+  border-bottom: 2px solid $highlight;
+}
 
-.entry__content p a {
-  color: blue;
-  border-bottom: 2px solid $secondary;
+.entry__content p a:hover, .page__content p a:hover {
+  color: lighten($base, 20%);
 }

@@ -1,0 +1,77 @@
+/* ------------------ *
+ *      CONTACT       *
+ * ------------------ */
+
+.form {
+}
+
+.form input, .form textarea {
+  background: white;
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid $secondary;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: .5em;
+  font-family: $body;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.form input:focus, .form textarea:focus {
+  outline: none!important;
+  box-shadow: 0;
+}
+
+.form label {
+  margin-bottom: .5em;
+  font-family: $headline;
+  color: gray;
+  float: left;
+}
+
+.form__message__textarea {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  height: 300px;
+  overflow: auto;
+  resize: none;
+  line-height: 1.45;
+}
+
+.form .form__submit {
+  font-family: $headline!important;
+  cursor: pointer;
+  color: gray;
+}
+
+.form__submit:hover {
+  background: $highlight;
+  border-color: $highlight;
+  color: white;
+}
+
+//Form Validation
+.form__success, .form__error {
+  display: none;
+}
+
+.error {
+  border: 2px solid #b35234!important;
+  color: #b35234;
+}
+
+.form__success {
+  color: #72ac3e;
+}
+.form__error {
+  color: #b35234;
+}
+
+.form__bot {
+  display: none!important;
+}
+.form__bot__input {
+  display: none!important;
+}

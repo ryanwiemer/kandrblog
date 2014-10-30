@@ -1,1 +1,9 @@
 //animations
+
+header a {
+  @include transition (all .1s ease-in-out);
+}
+
+article a, .page__content, .page-nav a {
+  @include transition (all .1s ease-in-out);
+}

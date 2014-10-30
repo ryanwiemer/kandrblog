@@ -155,8 +155,16 @@ function kandrblog_scripts() {
   wp_enqueue_style( 'kandrblog-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
   wp_enqueue_script( 'kandrblog-nav',  get_template_directory_uri() . '/assets/js/responsive-nav.min.js', '', '', true);
   wp_enqueue_script( 'kandrblog-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
-  wp_enqueue_script( 'kandrblog-global',  get_template_directory_uri() . '/assets/js/global.js', '', '', true);
+  wp_enqueue_script( 'kandrblog-global',  get_template_directory_uri() . '/assets/js/global.min.js', '', '', true);
   //wp_enqueue_script( 'kandrblog-modernizr',  get_template_directory_uri() . '/assets/js/modernizr.min.js');
 }
 
+function contact_scripts() {
+  if( is_page('Contact')) {
+  wp_enqueue_script( 'kandrblog-jquery-validate',  get_template_directory_uri() . '/assets/js/jquery.validate.min.js', '', '', true);
+  wp_enqueue_script( 'kandrblog-jquery-form',  get_template_directory_uri() . '/assets/js/jquery.form.min.js', '', '', true);
+  wp_enqueue_script( 'kandrblog-jquery-form-settings',  get_template_directory_uri() . '/assets/js/jquery.form.settings.min.js', '', '', true);
+}}
+
 add_action( 'wp_enqueue_scripts', 'kandrblog_scripts');
+add_action( 'wp_enqueue_scripts', 'contact_scripts');

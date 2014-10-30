@@ -2,13 +2,10 @@
  *   Main  *
  * ------- */
 
-body {
-}
-
 .container {
   max-width: $container;
   padding: 0 1.5em;
-  margin: 100px auto 2em;
+  margin: 5em auto 2em;
   @extend %clearfix;
 }
 
@@ -34,7 +31,9 @@ body {
   line-height: 1.45;
 }
 
+.page__header {
 
+}
 
 textarea:focus, input:focus{
     outline: 0;
