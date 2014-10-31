@@ -44,6 +44,9 @@
   font-family: $headline!important;
   cursor: pointer;
   color: gray;
+  @include bp(medium) {
+    width: 10em;
+  }
 }
 
 .form__submit:hover {

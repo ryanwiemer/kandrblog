@@ -14,7 +14,6 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="contact__content page__content">
-
 					<form class="form" method="post" name="contact" autocomplete="off">
 					  <fieldset>
 					    <div class="form__name">
@@ -52,7 +51,6 @@ get_header(); ?>
 					    </div>
 					  </fieldset>
 					</form>
-
 				</div><!-- .entry__content -->
 		<?php endwhile; // end of the loop. ?>
 

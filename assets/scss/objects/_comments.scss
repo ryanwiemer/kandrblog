@@ -132,3 +132,7 @@
   color: $base;
   border-bottom: 2px solid $highlight;
 }
+
+.logged-in-as a:hover {
+  color: lighten($base, 20%);
+}

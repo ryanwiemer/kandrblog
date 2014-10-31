@@ -4,6 +4,11 @@ header a {
   @include transition (all .1s ease-in-out);
 }
 
-article a, .page__content, .page-nav a {
+article a, .page__content a, .entry__content p a, .page-nav a, .sidebar__social a, .sidebar__archives__trigger, .sidebar__archives__dropdown a, .form input, .comment-respond input, .comment-respond a, .search-form__close {
+  @include transition (all .1s ease-in-out);
+}
+
+
+.search-form--fullscreen {
   @include transition (all .1s ease-in-out);
 }

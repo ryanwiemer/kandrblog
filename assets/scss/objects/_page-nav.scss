@@ -32,3 +32,7 @@
   float: left;
   border-right: 2px solid $secondary;
 }
+
+.page-nav a:nth-child(2) {
+  border-right: 0;
+}
