@@ -154,13 +154,13 @@
 
 .search-form__inner {
   @include bp(medium) {
-  display: inline-block;
-  position : absolute;
-  width: 600px;
-  height: 100px;
-  left: 50%;
-  top: 50%;
-  margin-left: -300px; /* half of the width  */
-  margin-top: -50px; /* half of the height */
+    display: inline-block;
+    position : absolute;
+    width: 600px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px; /* half of the width  */
+    margin-top: -50px; /* half of the height */
   }
 }

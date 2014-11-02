@@ -3,22 +3,27 @@
  * ------- */
 
 .site-logo {
-  color: $base;
-  font-weight: 600;
   float: left;
-  padding-left: 2em;
-  letter-spacing: 2px;
-  display: inline-block;
-  text-transform: uppercase;
-  line-height: 60px;
+  display: block;
+  text-indent: -9999px;
+  height: 20px;
+  width: 32px;
+  background: url('../img/logo.svg');
+  background-size: cover;
+  background-position: center center;
+  margin: 20px 0 0 2em;
+  opacity: 1;
+}
+
+.no-svg .site-logo {
+  background: url('../img/logo.png');
 }
 
 .site-header {
   border-bottom: 2px solid $secondary;
-  min-height: 60px;
   line-height: 60px;
   font-size: 14px;
-  background: lighten($tertiary, 2%);
+  background: white;
   background: rgba(255,255,255, .95);
   position: fixed;
   top: 0;
@@ -31,9 +36,11 @@
 }
 
 .site-header__nav {
+  min-height: 60px;
   margin: 60px auto 0;
   @include bp(medium) {
     margin: 0 auto;
+    height: 60px;
   }
 }
 
@@ -69,6 +76,7 @@
 }
 
 .site-header__nav ul li a {
+  height: 60px;
   color: $base;
   padding-bottom: 3px;
   display: block;

@@ -18,10 +18,7 @@
 
     <div class="sidebar__archives">
       <h3 class="sidebar__title">View Archives</h3>
-        <div class="sidebar__archives__trigger">Select a month<span>&#x25BC;</span></div>
-    <ul class="sidebar__archives__dropdown">
-      <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'html', 'show_post_count' => 0 ) ); ?>
-    </ul>
+        <a href="#" class="sidebar__archives__trigger">view archives</a>
     </div>
 
 </div><!-- .sidebar -->
