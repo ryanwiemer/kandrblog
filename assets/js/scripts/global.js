@@ -27,9 +27,3 @@ $(".search-form__close").click(
     $(".search-form").removeClass("search-form--fullscreen");
   }
 );
-
-//Archives dropdown
-$(".sidebar__archives__trigger").click(
-  function() {
-  $(".sidebar__archives__dropdown").toggleClass("sidebar__archives__dropdown--open");
-});

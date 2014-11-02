@@ -61,28 +61,10 @@
   color: white;
 }
 
-
-
-
-
-
-.sidebar__archives {
+.sidebar__archive {
   font-family: $headline;
   width: 100%;
-  float: left;
-  margin-top: 1em;
-  @extend %clearfix;
-}
-
-
-
-
-.sidebar__archives span {
-  color: darken($secondary, 25%);
-  font-size: .75em;
-}
-
-.sidebar__archives__trigger {
+  margin-top: .5em;
   text-align: center;
   color: gray;
   font-size: 14px;
@@ -95,12 +77,8 @@
   padding: .5em 1em;
 }
 
-.sidebar__archives__trigger:hover {
+.sidebar__archive:hover {
   background: $highlight;
   color: white;
   border-color: $highlight;
-}
-
-.sidebar__archives__trigger:hover span {
-  color: white;
 }

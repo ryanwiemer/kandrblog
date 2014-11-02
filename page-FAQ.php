@@ -6,8 +6,8 @@
 get_header(); ?>
 
 <div class="container">
-				<header class="page__header faq__header">
-					<h2 class="page__title faq__title">Facts And Questions</h2>
+				<header class="page__header">
+					<h2 class="page__title">Facts And Questions</h2>
 				</header><!-- .entry-header -->
 					<div class="page__content faq__content">
 						<ul class="faq">

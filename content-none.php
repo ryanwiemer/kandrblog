@@ -7,9 +7,9 @@
 <article class="no-results not-found">
 	<header class="none__header">
 		<h2 class="page__title"><?php _e( 'Nothing Found', 'themeTextDomain' ); ?></h2>
-	</header><!-- .entry__header -->
+	</header>
 
-	<div class="entry__content">
+	<div class="post__content">
 		<?php if ( is_archive() ) : ?>
 
 			<p><?php _e( 'There are no published posts for this archive. Try searching using keywords instead.', 'themeTextDomain' ); ?></p>
@@ -23,5 +23,5 @@
 			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps a search would help?', 'themeTextDomain' ); ?></p>
 
 		<?php endif; ?>
-	</div><!-- .entry__content -->
+	</div><!-- .post__content -->
 </article>

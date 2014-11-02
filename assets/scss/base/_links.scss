@@ -5,11 +5,11 @@ a {
   text-decoration: none;
 }
 
-.entry__content p a, .page__content p a {
+.entry__content p a, .page__content p a, .comment-body p a {
   color: $base;
   border-bottom: 2px solid $highlight;
 }
 
-.entry__content p a:hover, .page__content p a:hover {
+.entry__content p a:hover, .page__content p a:hover, .comment-body p a:hover {
   color: lighten($base, 20%);
 }

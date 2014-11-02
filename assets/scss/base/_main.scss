@@ -32,7 +32,11 @@
 }
 
 .page__header {
+  margin-bottom: 1em;
+}
 
+.page__title {
+  line-height: 1;
 }
 
 textarea:focus, input:focus{

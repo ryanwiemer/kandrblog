@@ -9,8 +9,8 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-				<header class="page__header contact__header">
-					<h2 class="contact__title page__title">Get In Contact</h2>
+				<header class="page__header">
+					<h2 class="page__title">Get In Contact</h2>
 				</header><!-- .entry-header -->
 
 				<div class="contact__content page__content">

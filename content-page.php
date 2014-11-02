@@ -7,11 +7,11 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry__header">
-		<h2 class="entry__title"><?php the_title(); ?></h2>
-	</header><!-- .entry-header -->
+	<header class="post__header">
+		<h2 class="post__title"><?php the_title(); ?></h2>
+	</header><!-- .post-header -->
 
-	<div class="entry__content">
+	<div class="post__content">
 		<?php the_content(); ?>
-	</div><!-- .entry__content -->
+	</div><!-- .post__content -->
 </article><!-- article -->

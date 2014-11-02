@@ -13,10 +13,10 @@ get_header(); ?>
 			<h2 class="none__title page__title"><?php _e( 'Uh oh!', 'themeTextDomain' ); ?></h2>
 		</header>
 
-		<div class="entry-content">
+		<div class="post-content">
 			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps a search would help?', 'themeTextDomain' ); ?></p>
 
-		</div><!-- .entry-content -->
+		</div><!-- .post-content -->
 	</article>
 </div>
 </div><!-- .container -->

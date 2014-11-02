@@ -84,6 +84,7 @@ add_filter('the_content', 'filter_ptags_on_images');
 //Remove Image Dimensions
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
 add_filter( 'image_send_to_editor', 'remove_thumbnail_dimensions', 10 );
+
 // Removes attached image sizes as well
 add_filter( 'the_content', 'remove_thumbnail_dimensions', 10 );
 function remove_thumbnail_dimensions( $html ) {
