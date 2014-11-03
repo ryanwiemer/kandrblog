@@ -5,9 +5,14 @@
 article {
   margin: 0 auto 3em;
   width: 100%;
+  @extend %clearfix;
 }
 
 article:last-child {
+  margin-bottom: 0;
+}
+
+article p:last-child, article img:last-child  {
   margin-bottom: 0;
 }
 
@@ -37,8 +42,8 @@ article:last-child {
 
 .post__content {
   margin-bottom: 1em;
+  @extend %clearfix;
 }
-
 
 .post__content p {
   margin: 0 auto 1em;
@@ -47,6 +52,7 @@ article:last-child {
 
 article img {
   margin-bottom: .5em;
+  @include span-columns(12);
 }
 
 .post-categories {

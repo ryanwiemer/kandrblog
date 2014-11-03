@@ -3,7 +3,6 @@
  * ------------------ */
 
 .sidebar {
-  margin-top: 2em;
   display: none;
   @include bp(medium) {
     @include span-columns(3);
@@ -43,6 +42,12 @@
   }
 }
 
+.sidebar__social {
+  margin-bottom: .5em;
+  @extend %clearfix;
+}
+
+
 .sidebar__social a {
   text-align: center;
   font-size: 14px;
@@ -59,26 +64,4 @@
 .sidebar__social a:hover {
   background: $base;
   color: white;
-}
-
-.sidebar__archive {
-  font-family: $headline;
-  width: 100%;
-  margin-top: .5em;
-  text-align: center;
-  color: gray;
-  font-size: 14px;
-  float: left;
-  width: 100%;
-  border: 2px solid $secondary;
-  border-radius: 2px;
-  background: $tertiary;
-  background: none;
-  padding: .5em 1em;
-}
-
-.sidebar__archive:hover {
-  background: $highlight;
-  color: white;
-  border-color: $highlight;
 }

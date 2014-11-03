@@ -49,5 +49,13 @@ get_header(); ?>
 	 <?php } ?>
 	</ul><!-- .archives -->
 	</div><!-- .page__content -->
+	<div class="sidebar sidebar--faq" role="complementary">
+		<h3 class="sidebar__title">Post suggestions?</h3>
+		<a href="<?php echo get_site_url() ?>/contact" class="btn btn--sidebar">Email us</a>
+	</div>
+
+
+
+
 </div><!-- .container -->
 <?php get_footer(); ?>

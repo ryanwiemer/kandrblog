@@ -3,7 +3,7 @@
  * ------------------ */
 
 .archive {
-  list-style-position: inside;
+  margin-top: -1em;
 }
 
 .archive__year {
@@ -12,38 +12,23 @@
   margin-top: .5em;
   display: inline-block;
   font-size: 1.25em;
+  color: $highlight
 }
 
 .archive__month {
   color: gray;
   font-family: $headline;
   text-transform: uppercase;
-  margin-top: .5em;
+  margin-top: 1em;
   margin-bottom: .25em;
   border-bottom: 2px solid $secondary;
 }
 
-
-
-.archive li {
-  //margin: 1em 0 1em;
-}
-
 .archive__link a{
-  //line-height: 1.45;
-  //list-style-type: disc;
   display: inline-block;
   padding: .5em .25em;
   color: $base;
   border-radius: 2px;
   width: 100%;
-}
-
-.archive__link a:hover {
-  background: $secondary;
-  //color: white;
-}
-
-.archive__link a {
-  color: $base;
+  text-transform: capitalize;
 }

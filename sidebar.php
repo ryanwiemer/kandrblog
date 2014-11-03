@@ -15,5 +15,5 @@
     <a href="http://www.pinterest.com/kirstennoellew/"><span class="icon-pinterest"></span></a>
     <a href="http://www.bloglovin.com/en/blog/3862566"><span class="icon-bloglovin"></span></a>
   </div>
-    <a href="<?php echo get_site_url() ?>/archive" class="sidebar__archive">view archive</a>
+    <a href="<?php echo get_site_url() ?>/archive" class="btn--sidebar btn">view archive</a>
 </div><!-- .sidebar -->

@@ -17,3 +17,17 @@
   border: 2px solid $base;
   color: white;
 }
+
+
+
+.btn--sidebar {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: .5em;
+}
+
+.btn--sidebar:hover {
+  background: $highlight;
+  border-color: $highlight;
+}

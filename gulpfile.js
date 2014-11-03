@@ -18,20 +18,31 @@ gulp.task ('move', function() {
     return gulp.src(['bower_components/jquery/dist/jquery.js','bower_components/responsive-nav/responsive-nav.js','bower_components/jquery-validate/dist/jquery.validate.js','bower_components/jquery-form/jquery.form.js' ])
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('assets/js/'))
+        .pipe(gulp.dest('assets/js/vendor'))
         //.pipe(notify({ message: 'Bower components are moved!'}));
 });
 
-// Concatenate, Lint and Minify JS
+// Lint JS
 gulp.task('scripts', function() {
     return gulp.src(['assets/js/scripts/*.js'])
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
-        .pipe(uglify())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('assets/js/'))
-        //.pipe(notify({ message: 'JS Scripts are minified!'}))
         .pipe(livereload());
+});
+
+// Concat
+gulp.task('concat-scripts', function() {
+    return gulp.src(['assets/js/vendor/jquery.min.js','assets/js/scripts/global.js'])
+        .pipe(concat('scripts.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('assets/js/'));
+});
+
+gulp.task('concat-contact', function() {
+return gulp.src(['assets/js/vendor/jquery.form.min.js','assets/js/scripts/jquery.form.settings.js','assets/js/vendor/jquery.validate.min.js'])
+    .pipe(concat('contact.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('assets/js/'));
 });
 
 // Compile Sass & Minify CSS

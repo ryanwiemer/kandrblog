@@ -53,6 +53,17 @@ get_header(); ?>
 					</form>
 				</div><!-- .entry__content -->
 		<?php endwhile; // end of the loop. ?>
+		<div class="sidebar sidebar--contact" role="complementary">
+			<h3 class="sidebar__title">Social Media</h3>
+			<div class="sidebar__social">
+				<a href="https://twitter.com/Kirstennoellew"><span class="icon-twitter"></span></a>
+				<a href="http://instagram.com/kirstennoellew"><span class="icon-instagram"></span></a>
+				<a href="http://www.pinterest.com/kirstennoellew/"><span class="icon-pinterest"></span></a>
+				<a href="http://www.bloglovin.com/en/blog/3862566"><span class="icon-bloglovin"></span></a>
+			</div>
+			<h3 class="sidebar__title">Photo Questions?</h3>
+			<a href="http://knw.io/contact" class="btn btn--sidebar">KNW Photography</a>
+		</div>
 
 </div><!-- .container -->
 <?php get_footer(); ?>
