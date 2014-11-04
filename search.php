@@ -10,8 +10,8 @@ get_header(); ?>
 <div class="main">
 	<?php if ( have_posts() ) : ?>
 
-		<header class="search__header">
-			<h2 class="search__title page__title"><?php printf( __( 'Search Results for: %s', 'themeTextDomain' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
+		<header class="page__header">
+			<h2 class="page__title"><?php printf( __( 'Search Results for: %s', 'themeTextDomain' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 		</header>
 
 		<?php /* Start the Loop */ ?>

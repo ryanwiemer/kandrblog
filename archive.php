@@ -6,12 +6,10 @@
 get_header(); ?>
 
 <div class="container">
-	<div class="main">
-
 	<?php if ( have_posts() ) : ?>
-
-		<header class="archive__header">
-			<h2 class="archive__title page__title">
+		<div class="main">
+		<header class="page__header archive__header">
+			<h2 class="page__title">
 				 <?php
             if ( is_category() ) {
                 printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' );
@@ -47,7 +45,6 @@ get_header(); ?>
         ?>
 			</h2>
 		</header>
-
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 

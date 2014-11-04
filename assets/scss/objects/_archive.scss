@@ -2,7 +2,7 @@
  *      Archives      *
  * ------------------ */
 
-.archive {
+.archive__list {
   margin-top: -1em;
 }
 
@@ -24,11 +24,17 @@
   border-bottom: 2px solid $secondary;
 }
 
-.archive__link a{
+.archive__link a {
   display: inline-block;
   padding: .5em .25em;
   color: $base;
   border-radius: 2px;
   width: 100%;
   text-transform: capitalize;
+}
+
+
+.archive__link a:hover {
+  background: $secondary;
+  color: $base;
 }

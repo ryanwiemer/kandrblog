@@ -1,0 +1,21 @@
+/* ------- *
+ *  PAGES  *
+ * ------- */
+
+.page__header {
+  margin-bottom: 1.5em;
+  @extend %clearfix;
+  text-transform: uppercase;
+}
+
+.page__title {
+  line-height: 1.3;
+}
+
+.page__title span {
+  color: white;
+  background: $highlight;
+  border-radius: 2px;
+  padding: 0 .5em;
+  display: inline-block;
+}

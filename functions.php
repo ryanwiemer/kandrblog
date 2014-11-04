@@ -75,6 +75,19 @@ function posts_link_attributes_prev() {
 //Featured Images
 add_theme_support( 'post-thumbnails');
 
+
+
+//Set default to no link on images
+function wpb_imagelink_setup() {
+    $image_set = get_option( 'image_default_link_type' );
+    if ($image_set !== 'none') {
+        update_option('image_default_link_type', 'none');
+    }
+}
+add_action('admin_init', 'wpb_imagelink_setup', 10);
+
+
+
 //Remove <p> tags from images
 function filter_ptags_on_images($content){
   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
@@ -140,12 +153,6 @@ function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
-
-//Add read more to excerpt
-function new_excerpt_more( $more ) {
-	return '... <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read more', 'your-text-domain') . '</a>';
-}
-add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 
 ////////////////////////

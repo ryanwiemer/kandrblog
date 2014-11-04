@@ -7,11 +7,11 @@ get_header(); ?>
 
 <div class="container">
 	<header class="page__header">
-		<h2 class="page__title archive__title">Archives</h2>
+		<h2 class="page__title archive__title">Archive</h2>
 	</header><!-- .entry-header -->
-	<div class="page__content archive__content">
+	<div class="main">
 
-	<ul class="archive">
+	<ul class="archive__list">
 	<?php
 	$all_posts = get_posts(array(
 	  'posts_per_page' => -1 // to show all posts
@@ -53,9 +53,6 @@ get_header(); ?>
 		<h3 class="sidebar__title">Post suggestions?</h3>
 		<a href="<?php echo get_site_url() ?>/contact" class="btn btn--sidebar">Email us</a>
 	</div>
-
-
-
 
 </div><!-- .container -->
 <?php get_footer(); ?>

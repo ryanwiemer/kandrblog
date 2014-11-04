@@ -1,3 +1,7 @@
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
+
 //Respsonsive Nav
 var nav = responsiveNav(".site-header__nav", { // Selector
   animate: true, // Boolean: Use CSS3 transitions, true or false

@@ -10,32 +10,11 @@
 }
 
 .main {
-  margin-top: 2em;
+  //margin-top: 2em;
   @include bp(medium) {
     margin-top: 0;
     @include span-columns(9);
   }
-}
-
-.page__content {
-  @include bp(medium) {
-    margin-top: 0;
-    @include span-columns(9);
-  }
-}
-
-.page__content p {
-  margin: 0 auto 1em;
-  line-height: 1.45;
-}
-
-.page__header {
-  margin-bottom: 1em;
-  //display: inline-block;
-}
-
-.page__title {
-  line-height: 1;
 }
 
 textarea:focus, input:focus{

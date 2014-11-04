@@ -1,3 +1,11 @@
 /* ------------------ *
  *         404        *
  * ------------------ */
+
+.error404 p {
+  line-height: 1.45;
+}
+
+.error404 .container, .search-no-results .container {
+  min-height: 450px;
+}

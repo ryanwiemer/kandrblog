@@ -4,7 +4,7 @@ header a {
   @include transition (all .1s ease-in-out);
 }
 
-article a, .page__content a, .entry__content p a, .page-nav a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond input, .comment-respond a, .search-form__close {
+article a, .main a, .entry__content p a, .page-nav a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond input, .comment-respond a, .search-form__close {
   @include transition (all .1s ease-in-out);
 }
 

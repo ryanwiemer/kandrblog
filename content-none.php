@@ -4,10 +4,12 @@
  */
 ?>
 
+
+<header class="page__header">
+	<h2 class="page__title"><?php _e( 'Nothing Found', 'themeTextDomain' ); ?></h2>
+</header>
+
 <article class="no-results not-found">
-	<header class="none__header">
-		<h2 class="page__title"><?php _e( 'Nothing Found', 'themeTextDomain' ); ?></h2>
-	</header>
 
 	<div class="post__content">
 		<?php if ( is_archive() ) : ?>

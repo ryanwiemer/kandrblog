@@ -3,21 +3,7 @@
  * ------------------ */
 
 //Serch Results Page
-.search__header, .archive__header {
-  margin: 0 0 2em 0;
-  @include bp(medium) {
-    @include span-columns(12);
-  }
-}
 
-.search__title span, .archive__title span {
-  color: white;
-  background: $highlight;
-  border-radius: 2px;
-  padding: 0 .5em;
-}
-
-//Search in the Menu
 .site-header__nav ul li a[title="search"]{
   display: none;
   @include bp(medium) {

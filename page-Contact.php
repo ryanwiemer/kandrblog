@@ -13,7 +13,7 @@ get_header(); ?>
 					<h2 class="page__title">Get In Contact</h2>
 				</header><!-- .entry-header -->
 
-				<div class="contact__content page__content">
+				<div class="main">
 					<form class="form" method="post" name="contact" autocomplete="off">
 					  <fieldset>
 					    <div class="form__name">
