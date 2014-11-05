@@ -8,7 +8,15 @@ article a, .main a, .entry__content p a, .page-nav a, .sidebar__social a, .btn, 
   @include transition (all .1s ease-in-out);
 }
 
-
 .search-form--fullscreen {
   //@include transition (all .1s ease-in-out);
+}
+
+.container {
+   opacity: 0;
+   @include transition (opacity .2s ease-in);
+}
+
+.loaded .container {
+  opacity: 1;
 }

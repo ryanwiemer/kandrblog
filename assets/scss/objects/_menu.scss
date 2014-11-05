@@ -33,10 +33,12 @@
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   transition: height 0.3s;
+  max-height: 62px;
 }
 
 .site-header__nav {
   min-height: 60px;
+  max-height: 0;
   margin: 60px auto 0;
   @include bp(medium) {
     margin: 0 auto;
@@ -116,7 +118,13 @@
   pointer-events: none !important;
 }
 
-@media screen and (min-width: 750px) {
+
+
+.js .site-header {
+  max-height: none;
+}
+
+@include bp(medium) {
   .js .site-header__nav {
     position: relative;
   }
@@ -126,4 +134,5 @@
   .nav-toggle {
     display: none;
   }
+
 }

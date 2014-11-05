@@ -15,7 +15,9 @@ get_header(); ?>
 				</div>
 
 				<div class="main">
-					<?php the_content(); ?>
+					<div class="page__content">
+						<?php the_content(); ?>
+					</div>
 				</div><!-- .entry__content -->
 		<?php endwhile; ?>
 </div><!-- .container -->

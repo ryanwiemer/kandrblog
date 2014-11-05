@@ -12,7 +12,7 @@
   <script>try{Typekit.load();}catch(e){}</script>
   <?php wp_head(); ?>
 </head>
-<body <?php body_class('preload'); ?>>
+<body <?php body_class('loading'); ?>>
 <header class="site-header">
   <a class="site-logo" href="<?php echo get_site_url() ?>"><h1>K&amp;R Blog</h1></a>
   <nav class="site-header__nav">

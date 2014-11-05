@@ -18,10 +18,15 @@
   margin-bottom: 1em;
 }
 
-#comments {
-  margin-bottom: 2em;
+.comment-list {
   border: 2px solid $secondary;
   border-radius: 2px;
+}
+
+#comments {
+  padding-top: 100px;
+  margin-top: -100px;
+  margin-bottom: 2em;
   @extend %clearfix;
 }
 
@@ -71,16 +76,17 @@
   width: 100%;
 }
 
-.comment-body p a {
-  
-}
-
 .comment-respond, comment-form{
   float: left;
   width: 100%;
 }
 
 //Comment Form
+
+.comment-form {
+  margin-bottom: 0;
+}
+
 .comment-form input, .comment-form textarea {
   background: white;
   width: 100%;
@@ -113,9 +119,12 @@
   color: gray;
 }
 
+.form-submit {
+  margin-bottom: 0!important;
+}
+
 .form-submit input {
   color: gray;
-  margin-bottom: 1em;
   @include bp(medium) {
     width: 10em;
   }

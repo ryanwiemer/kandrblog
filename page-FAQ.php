@@ -9,7 +9,6 @@ get_header(); ?>
 				<header class="page__header">
 					<h2 class="page__title">Facts And Questions</h2>
 				</header><!-- .entry-header -->
-
 					<div class="main">
 						<ul class="faq">
 							<?php if( get_field('faqs')): ?>

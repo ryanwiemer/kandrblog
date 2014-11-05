@@ -1,7 +1,3 @@
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
-
 //Respsonsive Nav
 var nav = responsiveNav(".site-header__nav", { // Selector
   animate: true, // Boolean: Use CSS3 transitions, true or false
@@ -19,15 +15,35 @@ var nav = responsiveNav(".site-header__nav", { // Selector
   close: function(){} // Function: Close callback
 });
 
-//Search JS
-$(".site-header__nav ul li:last-child").click(
-  function() {
-  $(".search-form").addClass("search-form--fullscreen");
-  $(".search-form__field").focus();
+//Loading classes
+$(window).load(function() {
+  $("body").removeClass("loading");
+  $("body").addClass("loaded");
 });
 
-$(".search-form__close").click(
-  function(){
-    $(".search-form").removeClass("search-form--fullscreen");
-  }
-);
+$(document) .ready(function() {
+  //Check if current page and return false on links
+  $('.active a').click(function() {
+    return false;
+  });
+
+  $('.post__active .post__title a').click(function() {
+    return false;
+  });
+
+  $('.home .site-logo').click(function() {
+    return false;
+  });
+
+  //Search JS
+  $(".site-header__nav ul li:last-child").click(
+    function() {
+    $(".search-form").addClass("search-form--fullscreen");
+    $(".search-form__field").focus();
+  });
+
+  $(".search-form__close").click(
+    function(){
+      $(".search-form").removeClass("search-form--fullscreen");
+  });
+});
