@@ -62,7 +62,7 @@ get_header(); ?>
 				<a href="http://www.bloglovin.com/en/blog/3862566"><span class="icon-bloglovin"></span></a>
 			</div>
 			<h3 class="sidebar__title">Photo Questions?</h3>
-			<a href="http://knw.io/contact" class="btn btn--sidebar">KNW Photography</a>
+			<a target="_blank" href="http://knw.io/contact" class="btn btn--sidebar">KNW Photography</a>
 		</div>
 
 </div><!-- .container -->
