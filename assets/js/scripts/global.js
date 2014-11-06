@@ -32,7 +32,6 @@ $(document) .ready(function() {
   $('.home .site-logo').click(function() {
     return false;
   });
-
   //Search JS
   $(".site-header__nav ul li:last-child").click(
     function() {

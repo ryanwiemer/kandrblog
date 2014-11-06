@@ -154,7 +154,6 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-
 ////////////////////////
 //CSS & JS Scripts//////
 ////////////////////////
@@ -162,9 +161,8 @@ add_action( 'init', 'register_my_menu' );
 //Enqueue scripts and styles.
 function kandrblog_scripts() {
   wp_enqueue_style( 'kandrblog-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
-  wp_enqueue_script( 'kandrblog-nav',  get_template_directory_uri() . '/assets/js/vendor/responsive-nav.min.js');
   wp_enqueue_script( 'kandrblog-scripts',  get_template_directory_uri() . '/assets/js/scripts.min.js', '', '', true);
-  //wp_enqueue_script( 'kandrblog-modernizr',  get_template_directory_uri() . '/assets/js/modernizr.min.js');
+  wp_enqueue_script( 'kandrblog-modernizr',  get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js');
 }
 
 function contact_scripts() {
