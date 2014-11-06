@@ -26,11 +26,9 @@ $(document) .ready(function() {
   $('.active a').click(function() {
     return false;
   });
-
   $('.post__active .post__title a').click(function() {
     return false;
   });
-
   $('.home .site-logo').click(function() {
     return false;
   });
@@ -41,7 +39,6 @@ $(document) .ready(function() {
     $(".search-form").addClass("search-form--fullscreen");
     $(".search-form__field").focus();
   });
-
   $(".search-form__close").click(
     function(){
       $(".search-form").removeClass("search-form--fullscreen");

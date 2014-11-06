@@ -28,5 +28,8 @@
     "tiny-lr": "0.0.5",
     "gulp-sass": "~0.7.1",
     "gulp-notify": "~1.2.5"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^1.0.1"
   }
 }
