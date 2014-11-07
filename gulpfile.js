@@ -8,7 +8,6 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minifycss = require('gulp-minify-css');
-var notify = require ('gulp-notify');
 var lr = require('tiny-lr');
 var livereload = require('gulp-livereload');
 var autoprefixer = require('gulp-autoprefixer');
@@ -19,8 +18,7 @@ gulp.task ('move', function() {
     gulp.src(['bower_components/jquery/dist/jquery.js','bower_components/responsive-nav/responsive-nav.js','bower_components/jquery-validate/dist/jquery.validate.js','bower_components/jquery-form/jquery.form.js'])
 	    .pipe(uglify())
 	    .pipe(rename({suffix: '.min'}))
-	    .pipe(gulp.dest('assets/js/vendor'))
-	    //.pipe(notify({ message: 'Bower components are moved!'}));
+	    .pipe(gulp.dest('assets/js/vendor/'))
 });
 
 // Lint JS
@@ -31,7 +29,7 @@ gulp.task('scripts', function() {
         .pipe(livereload());
 });
 
-// Concat
+// Concat JS
 gulp.task('concat', function() {
     gulp.src(['assets/js/vendor/responsive-nav.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/global.js'])
         .pipe(concat('scripts.min.js'))
