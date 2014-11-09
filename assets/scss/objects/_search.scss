@@ -32,24 +32,28 @@
 .search-form {
   text-align: center;
   @include bp(medium) {
-    display: block;
-    width: 100%;
-    height: 100%;
     position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+	  height: 100%;
     top: 0;
     left: 0;
-    overflow: hidden;
-    opacity: 0;
+    right: 0;
+    bottom: 0;
     visibility: hidden;
+    background: $base;
   }
 }
 
-.search-form--fullscreen {
-  background: $base;
+.overlay .search-form {
   opacity: 1;
   visibility: visible;
-  z-index: 2;
+  z-index: 100;
+
 }
+
+
 
 .search-from__submit {
   text-transform: uppercase;
@@ -136,15 +140,12 @@
   }
 }
 
+.search-form__container {
+  position: relative;
+}
+
 .search-form__inner {
   @include bp(medium) {
     display: inline-block;
-    position : absolute;
-    width: 600px;
-    height: 100px;
-    left: 50%;
-    top: 50%;
-    margin-left: -300px; /* half of the width  */
-    margin-top: -50px; /* half of the height */
   }
 }

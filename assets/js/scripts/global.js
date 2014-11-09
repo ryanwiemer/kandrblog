@@ -32,11 +32,11 @@ $(document) .ready(function() {
   //Search JS
   $(".site-header__nav ul li:last-child").click(
     function() {
-    $(".search-form").addClass("search-form--fullscreen");
+    $("body").addClass("overlay");
     $(".search-form__field").focus();
   });
   $(".search-form__close").click(
     function(){
-      $(".search-form").removeClass("search-form--fullscreen");
+      $("body").removeClass("overlay");
   });
 });

@@ -17,6 +17,6 @@
   <a class="site-logo" href="<?php echo get_site_url() ?>"><h1>K&amp;R Blog</h1></a>
   <nav class="site-header__nav">
     <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => false, 'menu_class' => '', 'container_class' => '') ); ?>
+    <?php get_search_form(); ?>  
   </nav>
 </header>
-<?php get_search_form(); ?>
