@@ -29,19 +29,14 @@ $(document) .ready(function() {
   $('.post__active .post__title a').click(function() {
     return false;
   });
-  $('.home .site-logo').click(function() {
-    return false;
-  });
   //Search JS
   $(".site-header__nav ul li:last-child").click(
     function() {
     $(".search-form").addClass("search-form--fullscreen");
-    $(".search-form__overlay").addClass("search-form__overlay--open");
     $(".search-form__field").focus();
   });
   $(".search-form__close").click(
     function(){
       $(".search-form").removeClass("search-form--fullscreen");
-      $(".search-form__overlay").removeClass("search-form__overlay--open");
   });
 });

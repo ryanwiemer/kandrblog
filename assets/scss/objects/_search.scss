@@ -39,27 +39,17 @@
     top: 0;
     left: 0;
     overflow: hidden;
+    opacity: 0;
     visibility: hidden;
   }
 }
 
-.search-form__overlay {
+.search-form--fullscreen {
   background: $base;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
-}
-
-.search-form__overlay--open {
   opacity: 1;
-  //z-index: 0;
+  visibility: visible;
+  z-index: 2;
 }
-
 
 .search-from__submit {
   text-transform: uppercase;
@@ -106,11 +96,6 @@
 }
 
 //Desktop Version
-.search-form--fullscreen {
-  z-index: 100;
-  visibility: visible;
-}
-
 .search-form__close {
   display: none;
   @include bp(medium) {

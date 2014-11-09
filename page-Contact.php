@@ -56,13 +56,13 @@ get_header(); ?>
 		<div class="sidebar sidebar--contact" role="complementary">
 			<h3 class="sidebar__title">Social Media</h3>
 			<div class="sidebar__social">
-				<a href="https://twitter.com/Kirstennoellew"><span class="icon-twitter"></span></a>
-				<a href="http://instagram.com/kirstennoellew"><span class="icon-instagram"></span></a>
-				<a href="http://www.pinterest.com/kirstennoellew/"><span class="icon-pinterest"></span></a>
-				<a href="http://www.bloglovin.com/en/blog/3862566"><span class="icon-bloglovin"></span></a>
+				<a href="https://twitter.com/Kirstennoellew" target="_blank"><span class="icon-twitter"></span></a>
+				<a href="http://instagram.com/kirstennoellew" target="_blank"><span class="icon-instagram"></span></a>
+				<a href="http://www.pinterest.com/kirstennoellew/" target="_blank"><span class="icon-pinterest"></span></a>
+				<a href="http://www.bloglovin.com/en/blog/3862566" target="_blank"><span class="icon-bloglovin"></span></a>
 			</div>
 			<h3 class="sidebar__title">Photo Questions?</h3>
-			<a target="_blank" href="http://knw.io/contact" class="btn btn--sidebar">KNW Photography</a>
+			<a target="_blank" href="http://knw.io/contact" target="_blank" class="btn btn--sidebar">KNW Photography</a>
 		</div>
 
 </div><!-- .container -->
