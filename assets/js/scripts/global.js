@@ -32,11 +32,7 @@ $(document) .ready(function() {
   //Search JS
   $(".site-header__nav ul li:last-child").click(
     function() {
-    $("body").addClass("overlay");
+    $("body").toggleClass("open");
     $(".search-form__field").focus();
-  });
-  $(".search-form__close").click(
-    function(){
-      $("body").removeClass("overlay");
   });
 });
