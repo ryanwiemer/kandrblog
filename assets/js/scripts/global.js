@@ -33,6 +33,6 @@ $(document) .ready(function() {
   $(".site-header__nav ul li:last-child").click(
     function() {
     $("body").toggleClass("open");
-    $(".search-form__field").focus();
+    setTimeout(function() { $('.search-form__field').focus(); }, 400);
   });
 });

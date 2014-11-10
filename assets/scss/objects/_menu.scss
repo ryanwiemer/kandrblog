@@ -91,6 +91,18 @@
   }
 }
 
+
+.site-header__nav ul li a[title="photo"]:hover {
+  //color: white;
+}
+
+.site-header__nav ul li a[title="photo"]:after {
+
+}
+
+
+
+
 .nav-toggle {
   color: $base;
   text-transform: uppercase;
