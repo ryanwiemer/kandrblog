@@ -7,8 +7,6 @@
   padding: 0 1.5em;
   margin: 5em auto 2em;
   @extend %clearfix;
-  @include bp(medium) {
-  }
 }
 
 .main {
@@ -19,5 +17,5 @@
 }
 
 textarea:focus, input:focus{
-    outline: 0;
+  outline: 0;
 }

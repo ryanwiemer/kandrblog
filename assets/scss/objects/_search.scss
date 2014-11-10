@@ -48,7 +48,7 @@
   @include bp(medium) {
     visibility: hidden;
     background: white;
-    position: absolute;
+    position: fixed;
     right: 4em;
     width: 0px;
     opacity: 0;
