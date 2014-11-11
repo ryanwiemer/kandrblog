@@ -15,10 +15,39 @@ article a, .main a, .entry__content p a, .page-nav a, .sidebar__social a, .btn, 
 }
 
 .container {
-   opacity: 0;
-   transition: opacity .2s ease-in;
+  opacity: 0;
+  transition: opacity .2s ease-in;
 }
 
 .loaded .container {
   opacity: 1;
+}
+
+//Preloader animation
+.preloader path,
+.preloader rect{
+  fill: $highlight;
+}
+
+.preloader {
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  width: 600px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px; /* half of the width  */
+  margin-top: -10px; /* half of the height */
+  //opacity: 1;
+}
+
+.loaded .preloader {
+  //display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.no-svg .preloader {
+  display: none;
 }
