@@ -95,7 +95,7 @@
   color: $base;
   text-transform: uppercase;
   float: right;
-  padding-right: .75em;
+  padding-right: 1.15em;
   font-family: 'icons';
   font-size: 18px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -105,7 +105,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  right: 0;
+  //right: 2em;
 }
 
 .site-header__nav.opened {

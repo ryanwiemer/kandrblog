@@ -37,11 +37,12 @@ $(document) .ready(function() {
   });
 
   //iOS jumping fixed element fix
-  $(document).on('blur', 'input, textarea', function() {
-    setTimeout(function() {
-      window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
-  }, 0);
-});
-
+        $(document)
+          .on('focus', 'input', function(e) {
+              $('body').addClass('fixfixed');
+          })
+          .on('blur', 'input', function(e) {
+              $('body').removeClass('fixfixed');
+          });
 
 });
