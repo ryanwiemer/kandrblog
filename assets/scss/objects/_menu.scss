@@ -83,13 +83,27 @@
 }
 
 .site-header__nav ul li a:hover {
-  color: #222;
-  background: $secondary;
+  //color: #222;
+  //background: $secondary;
   @include bp(medium) {
     background: none;
     color: $highlight;
   }
 }
+
+.site-header__nav ul .active a {
+    color: #222;
+    background: $secondary;
+  @include bp(medium) {
+    color: $base;
+    background: none;
+  }
+}
+
+
+
+
+
 
 .nav-toggle {
   color: $base;
@@ -105,7 +119,6 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  //right: 2em;
 }
 
 .site-header__nav.opened {

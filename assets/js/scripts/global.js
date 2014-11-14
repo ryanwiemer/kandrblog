@@ -21,7 +21,6 @@ $(window).load(function() {
   $("body").addClass("loaded");
 });
 
-
 $(document) .ready(function() {
   //Check if current page and return false on links
   $('.active a').click(function() {

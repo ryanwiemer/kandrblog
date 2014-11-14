@@ -41,7 +41,7 @@
   line-height: 1.45;
 }
 
-.form .form__submit {
+.form__submit, .touch .form__submit:hover {
   font-family: $headline!important;
   cursor: pointer;
   color: gray;
@@ -80,10 +80,7 @@
   display: none!important;
 }
 
-
-
 //Contact Sidebar
-
 .sidebar--contact {
   margin-top: 0!important;
 }

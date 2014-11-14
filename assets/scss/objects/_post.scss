@@ -27,7 +27,7 @@ article p:last-child, article img:last-child  {
   margin-bottom: .5em;
 }
 
-.post__title a {
+.post__title a, .touch .post__title a:hover {
   color: $base;
   border-bottom: 2px solid $highlight;
 }
@@ -68,7 +68,7 @@ article img {
   margin-bottom: .35em;
 }
 
-.post-categories a {
+.post-categories a, .touch .post-categories a:hover {
   font-size: .8em;
   display: inline-block;
   background: $tertiary;

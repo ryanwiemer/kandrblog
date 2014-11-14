@@ -8,7 +8,7 @@
   border-top: 2px solid $secondary;
 }
 
-.btn-pagination {
+.btn-pagination, .touch .btn-pagination:hover {
   color: gray;
   background: $tertiary;
   font-family: $headline;

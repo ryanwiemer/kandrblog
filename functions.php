@@ -66,7 +66,14 @@ function posts_link_attributes_prev() {
   return 'class="btn-pagination btn-pagination--prev"';
 }
 
-
+//Remove pages from Search
+function SearchFilter($query) {
+if ($query->is_search) {
+$query->set('post_type', 'post');
+}
+return $query;
+}
+add_filter('pre_get_posts','SearchFilter');
 
 ////////////////////////
 //Edits to Image Output/
@@ -74,8 +81,6 @@ function posts_link_attributes_prev() {
 
 //Featured Images
 add_theme_support( 'post-thumbnails');
-
-
 
 //Set default to no link on images
 function wpb_imagelink_setup() {
