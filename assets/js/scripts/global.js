@@ -35,4 +35,13 @@ $(document) .ready(function() {
     $("body").toggleClass("open");
     setTimeout(function() { $('.search-form__field').focus(); }, 400);
   });
+
+  //iOS jumping fixed element fix
+  $(document).on('blur', 'input, textarea', function() {
+    setTimeout(function() {
+      window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
+  }, 0);
+});
+
+
 });
