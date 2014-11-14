@@ -2,14 +2,21 @@
  *     COMMENTS      *
  * ------------------ */
 
-.comments-link, .touch .comments-link a:hover {
+.comments-link {
   margin-top: 1em;
+}
+
+.comments-link a, .touch .comments-link a:hover {
+  background: none;
+  color: gray;
 }
 
 .comments-link a:hover {
   background: $highlight;
+  color: white;
   border-color: $highlight;
 }
+
 
 //Comments Section
 .comment-reply-title {
