@@ -4,7 +4,7 @@ header a {
   transition: all .1s ease-in-out;
 }
 
-p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond input, .comment-respond a, .comments-link a, .post-categories a{
+p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond input, .comment-respond a, .comments-link a, .post-categories a, .page-nav a{
   transition: all .1s ease-in-out;
 }
 
@@ -23,31 +23,55 @@ p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond inpu
   opacity: 1;
 }
 
-//Preloader animation
-.preloader path,
-.preloader rect{
-  fill: $highlight;
-}
+//Loading Spinner Animation
 
-.preloader {
-  display: inline-block;
-  text-align: center;
-  position: fixed;
-  width: 600px;
-  height: 20px;
-  left: 50%;
-  top: 50%;
-  margin-left: -300px; /* half of the width  */
-  margin-top: -10px; /* half of the height */
-  //opacity: 1;
-}
-
-.loaded .preloader {
-  //display: none;
+.loaded .spinner {
   opacity: 0;
   visibility: hidden;
 }
 
-.no-svg .preloader {
+.no-cssanimations .preloader {
   display: none;
+}
+
+
+.spinner {
+  height:30px;
+  width:30px;
+  margin:0px auto;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  -webkit-animation: rotation .8s infinite linear;
+  -moz-animation: rotation .8s infinite linear;
+  -o-animation: rotation .8s infinite linear;
+  animation: rotation .8s infinite linear;
+  border-left:3px solid $secondary;
+  border-right:3px solid $secondary;
+  border-bottom:3px solid $secondary;
+  border-top:3px solid $highlight;
+  border-radius:100%;
+  opacity: 1;
+}
+
+@-webkit-keyframes rotation {
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(359deg);}
+}
+
+@-moz-keyframes rotation {
+from {-moz-transform: rotate(0deg);}
+to {-moz-transform: rotate(359deg);}
+}
+
+@-o-keyframes rotation {
+from {-o-transform: rotate(0deg);}
+to {-o-transform: rotate(359deg);}
+}
+
+@keyframes rotation {
+from {transform: rotate(0deg);}
+to {transform: rotate(359deg);}
 }
