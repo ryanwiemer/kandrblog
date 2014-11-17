@@ -16,8 +16,8 @@ get_header(); ?>
 				<div class="main">
 					<div class="page__content">
 						<?php the_content(); ?>
-					</div>
-				</div><!-- .entry__content -->
+					</div><!-- .page__content -->
+				</div><!-- .main -->
 		<?php endwhile; ?>
 
 		<div class="sidebar sidebar--about" role="complementary">

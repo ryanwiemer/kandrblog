@@ -3,7 +3,6 @@
  * ------------------ */
 
 //Serch Results Page
-
 .site-header__nav ul li a[title="search"]{
   display: none;
   @include bp(medium) {
@@ -17,7 +16,9 @@
 }
 
 .site-header__nav ul li a[title="search"]:after {
+    display: none;
   @include bp(medium) {
+    display: block;
     cursor: pointer;
     font-size: .85em;
     visibility: visible;
@@ -29,13 +30,11 @@
 }
 
 .open .site-header__nav ul li a[title="search"]:after {
-  @include bp(medium) {
-    content: "X";
-    font-weight: bold;
-    font-family: $headline;
-    font-size: 1.25em;
-    color: darken($secondary, 10%);
-  }
+  content: "X";
+  font-weight: bold;
+  font-family: $headline;
+  font-size: 1.25em;
+  color: darken($secondary, 10%);
 }
 
 .open .site-header__nav ul li a[title="search"]:hover:after {
@@ -44,14 +43,16 @@
 
 //Search Form
 .search-form {
+  visibility: visible;
+  opacity: 1;
   text-align: center;
   @include bp(medium) {
-    visibility: hidden;
-    background: white;
-    position: fixed;
-    right: 4em;
-    width: 0px;
-    opacity: 0;
+  visibility: hidden;
+  background: white;
+  position: fixed;
+  right: 4em;
+  width: 0px;
+  opacity: 0;
   }
 }
 
@@ -63,8 +64,14 @@
   }
 }
 
+.search-from__submit {
+  display: block;
+  @include bp(medium) {
+    display: none;
+  }
+}
+
 .search-from__submit, .touch .search-from__submit:hover {
-  text-transform: uppercase;
   -webkit-appearance: none;
   -moz-appearance: none;
   border: 0;
@@ -78,14 +85,11 @@
   font-family: $headline;
   position: relative;
   font-size: 1em;
+  display: inline-block;
+  text-transform: uppercase;
   @include bp(medium) {
     display: none;
   }
-}
-
-.search-from__submit:hover {
-  background: $secondary;
-  color: $base;
 }
 
 .search-form .search-form__field {

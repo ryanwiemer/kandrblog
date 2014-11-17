@@ -2,9 +2,6 @@
  *      CONTACT       *
  * ------------------ */
 
-.form {
-}
-
 .form input, .form textarea {
   background: white;
   width: 100%;
@@ -41,7 +38,7 @@
   line-height: 1.45;
 }
 
-.form__submit, .touch .form__submit:hover {
+.form__submit, .touch .form__submit:hover, .touch .form__submit:focus {
   font-family: $headline!important;
   cursor: pointer;
   color: gray;

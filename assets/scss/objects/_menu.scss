@@ -28,9 +28,11 @@
   position: fixed;
   top: 0;
   width: 100%;
-  overflow: hidden;
   z-index: 1;
   max-height: 62px;
+  @include bp(medium) {
+    overflow: hidden;
+  }
 }
 
 .site-header__nav {

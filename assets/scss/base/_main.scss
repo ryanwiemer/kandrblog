@@ -23,3 +23,9 @@ textarea:focus, input:focus{
 @-ms-viewport{
   width: device-width;
 }
+
+
+//Search Fixes for iOS and Android
+.fixfixed .site-header__nav {
+  position: absolute;
+}

@@ -24,8 +24,8 @@ p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond inpu
 }
 
 //Loading Spinner Animation
-
 .loaded .spinner {
+  display: none;
   opacity: 0;
   visibility: hidden;
 }
@@ -33,7 +33,6 @@ p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond inpu
 .no-cssanimations .preloader {
   display: none;
 }
-
 
 .spinner {
   height:30px;
@@ -57,21 +56,21 @@ p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond inpu
 }
 
 @-webkit-keyframes rotation {
-from {-webkit-transform: rotate(0deg);}
-to {-webkit-transform: rotate(359deg);}
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(359deg);}
 }
 
 @-moz-keyframes rotation {
-from {-moz-transform: rotate(0deg);}
-to {-moz-transform: rotate(359deg);}
+  from {-moz-transform: rotate(0deg);}
+  to {-moz-transform: rotate(359deg);}
 }
 
 @-o-keyframes rotation {
-from {-o-transform: rotate(0deg);}
-to {-o-transform: rotate(359deg);}
+  from {-o-transform: rotate(0deg);}
+  to {-o-transform: rotate(359deg);}
 }
 
 @keyframes rotation {
-from {transform: rotate(0deg);}
-to {transform: rotate(359deg);}
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
 }

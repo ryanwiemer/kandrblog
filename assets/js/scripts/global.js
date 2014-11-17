@@ -21,18 +21,28 @@ $(window).load(function() {
   $("body").addClass("loaded");
 });
 
-$(document) .ready(function() {
+$(document).ready(function() {
   //Check if current page and return false on links
-  $('.active a').click(function() {
-    return false;
+  $(".active a").click(function(e) {
+    e.preventDefault();
   });
-  $('.post__active .post__title a').click(function() {
-    return false;
+  $(".post__active .post__title a").click(function(e) {
+    e.preventDefault();
   });
-  //Search JS
-  $(".site-header__nav ul li:last-child").click(
-    function() {
+  //Search JS (desktop)
+  $(".site-header__nav ul li a[title='search']").click(
+    function(e) {
+    e.preventDefault();
     $("body").toggleClass("open");
     setTimeout(function() { $('.search-form__field').focus(); }, 400);
   });
+  //Search JS (fixes for mobile fixed position behavior)
+    if (Modernizr.touch) {
+      $(document).on('focus', 'input', function(e) {
+          $('body').addClass('fixfixed');
+        })
+        .on('blur', 'input', function(e) {
+          $('body').removeClass('fixfixed');
+        });
+      }
 });
