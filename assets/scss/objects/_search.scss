@@ -47,8 +47,8 @@
   opacity: 1;
   text-align: center;
   @include bp(medium) {
+  background: none;
   visibility: hidden;
-  background: white;
   position: fixed;
   right: 4em;
   width: 0px;
@@ -75,7 +75,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   border: 0;
-  background: none;
+  background: white;
   border: 2px solid $secondary;
   width: 80px;
   padding: .48em;
@@ -98,7 +98,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 2px;
-  background: none;
+  background: white;
   border-radius: 2px;;
   border: 2px solid $secondary;
   font-size: 1em;

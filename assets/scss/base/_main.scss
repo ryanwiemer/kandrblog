@@ -29,3 +29,7 @@ textarea:focus, input:focus{
 .fixfixed .site-header__nav {
   position: absolute;
 }
+
+.fixfixed .search-form {
+  z-index: 99;
+}
