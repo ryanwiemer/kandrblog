@@ -37,12 +37,13 @@ $(document).ready(function() {
     setTimeout(function() { $('.search-form__field').focus(); }, 400);
   });
   //Search JS (fixes for mobile fixed position behavior)
-    if (Modernizr.touch) {
-      $(document).on('focus', 'input', function(e) {
-          $('body').addClass('fixfixed');
-        })
-        .on('blur', 'input', function(e) {
-          $('body').removeClass('fixfixed');
-        });
-      }
+  if(/iPhone|iPod|Android|iPad/.test(window.navigator.platform)){
+  $(document)
+  .on('focus', 'textarea,input,select', function(e) {
+  $('.site-header').css('position', 'absolute');
+  })
+  .on('blur', 'textarea,input,select', function(e) {
+  $('.site-header').css('position', '');
+  });
+  }
 });
