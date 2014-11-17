@@ -10,10 +10,9 @@
 
 .site-footer__colophon {
   padding-top: 3em;
-@include bp(medium) {
-  padding-top: 2.5em;
-}
-
+  @include bp(medium) {
+    padding-top: 2.5em;
+  }
 }
 .site-footer__colophon p {
   line-height: 1.45;

@@ -22,7 +22,7 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
-  //Check if current page and return false on links
+  //Check if current page and disable reloading the page when clicking on the link
   $(".active a").click(function(e) {
     e.preventDefault();
   });
@@ -38,12 +38,12 @@ $(document).ready(function() {
   });
   //Search JS (fixes for mobile fixed position behavior)
   if(/iPhone|iPod|Android|iPad/.test(window.navigator.platform)){
-  $(document)
-  .on('focus', 'textarea,input,select', function(e) {
-  $('.site-header').css('position', 'absolute');
-  })
-  .on('blur', 'textarea,input,select', function(e) {
-  $('.site-header').css('position', '');
-  });
-  }
+    $(document)
+      .on('focus', 'textarea,input,select', function(e) {
+        $('.site-header').css('position', 'absolute');
+      })
+      .on('blur', 'textarea,input,select', function(e) {
+        $('.site-header').css('position', '');
+      });
+    }
 });
