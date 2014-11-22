@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="container">
 	<header class="page__header">
 		<h2 class="page__title archive__title">Archive</h2>
-	</header><!-- .entry-header -->
+	</header>
 	<div class="main">
 
 	<ul class="archive__list">
@@ -47,12 +47,12 @@ get_header(); ?>
 	      </li>
 	    <?php } ?>
 	 <?php } ?>
-	</ul><!-- .archives -->
-	</div><!-- .page__content -->
+	</ul>
+	</div>
 	<div class="sidebar sidebar--faq" role="complementary">
 		<h3 class="sidebar__title">Post suggestions?</h3>
 		<a href="<?php echo get_site_url() ?>/contact" class="btn btn--sidebar">Email us</a>
 	</div>
 
-</div><!-- .container -->
+</div>
 <?php get_footer(); ?>

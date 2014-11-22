@@ -15,6 +15,7 @@ get_header(); ?>
 			<?php comments_template( '', true ); ?>
 
 		<?php endwhile; // end of the loop. ?>
+
 	</div>
-</div><!-- .container -->
+</div>
 <?php get_footer(); ?>

@@ -7,6 +7,5 @@
     $headers = "From: " . sanitize_email( $_POST["email"] ) . "\r\n";
     $headers .= "Reply-To: ". sanitize_email( $_POST["email"] ) . "\r\n";
     $body = esc_textarea( $_POST["message"] );
-
     $send = wp_mail($to, $subject, $body, $headers);
 ?>

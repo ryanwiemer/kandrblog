@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="container">
 				<header class="page__header">
 					<h2 class="page__title">Facts And Questions</h2>
-				</header><!-- .entry-header -->
+				</header>
 					<div class="main">
 						<ul class="faq">
 							<?php if( get_field('faqs')): ?>
@@ -23,10 +23,10 @@ get_header(); ?>
 									</li>
 								<?php endwhile; endif; ?>
 						</ul>
-					</div><!-- .page__content -->
+					</div>
 					<div class="sidebar sidebar--faq" role="complementary">
 						<h3 class="sidebar__title">FAQ suggestions?</h3>
 						<a href="<?php echo get_site_url() ?>/contact" class="btn btn--sidebar">Email us</a>
 					</div>
-</div><!-- .container -->
+</div>
 <?php get_footer(); ?>

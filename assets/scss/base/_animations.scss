@@ -4,7 +4,7 @@ header a {
   transition: all .1s ease-in-out;
 }
 
-p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond input, .comment-respond a, .comments-link a, .post-categories a, .page-nav a{
+p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond input, .comment-respond a, .comments-link a, .post-categories a, .page-nav a {
   transition: all .1s ease-in-out;
 }
 
@@ -30,7 +30,7 @@ p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond inpu
   visibility: hidden;
 }
 
-.no-cssanimations .preloader {
+.no-cssanimations .spinner {
   display: none;
 }
 
@@ -47,11 +47,11 @@ p a, .sidebar__social a, .btn, .btn--sidebar, .form input, .comment-respond inpu
   -moz-animation: rotation .8s infinite linear;
   -o-animation: rotation .8s infinite linear;
   animation: rotation .8s infinite linear;
-  border-left:3px solid $secondary;
-  border-right:3px solid $secondary;
-  border-bottom:3px solid $secondary;
-  border-top:3px solid $highlight;
-  border-radius:100%;
+  border-left: 3px solid $secondary;
+  border-right: 3px solid $secondary;
+  border-bottom: 3px solid $secondary;
+  border-top: 3px solid $highlight;
+  border-radius: 100%;
   opacity: 1;
 }
 

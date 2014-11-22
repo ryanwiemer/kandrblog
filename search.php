@@ -30,13 +30,11 @@ get_header(); ?>
 	<?php endif; ?>
 
 </div>
-<?php get_sidebar(); ?>
-
-</div><!-- .container -->
+	<?php get_sidebar(); ?>
+</div>
 
 <div class="page-nav">
 	<?php posts_nav_link(' ','Newer Posts &#8594;','&#8592; Older Posts'); ?>
 </div>
-
 
 <?php get_footer(); ?>

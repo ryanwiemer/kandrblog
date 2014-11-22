@@ -14,5 +14,5 @@ get_header(); ?>
 			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps a search would help?', 'themeTextDomain' ); ?></p>
 	</article>
 
-</div><!-- .container -->
+</div>
 <?php get_footer(); ?>

@@ -11,7 +11,7 @@ get_header(); ?>
 
 				<header class="page__header">
 					<h2 class="page__title">Get In Contact</h2>
-				</header><!-- .entry-header -->
+				</header>
 
 				<div class="main">
 					<form class="form" method="post" name="contact" autocomplete="off">
@@ -51,7 +51,7 @@ get_header(); ?>
 					    </div>
 					  </fieldset>
 					</form>
-				</div><!-- .entry__content -->
+				</div>
 		<?php endwhile; // end of the loop. ?>
 		<div class="sidebar sidebar--contact" role="complementary">
 			<h3 class="sidebar__title">Social Media</h3>
@@ -65,5 +65,5 @@ get_header(); ?>
 			<a target="_blank" href="http://knw.io/contact" target="_blank" class="btn btn--sidebar">KNW Photography</a>
 		</div>
 
-</div><!-- .container -->
+</div>
 <?php get_footer(); ?>

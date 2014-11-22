@@ -1,3 +1,13 @@
 /* ------- *
  *  LISTS  *
  * ------- */
+
+.post__content ul {
+  list-style: disc inside none;
+  margin-bottom: 1em;
+}
+
+.post__content ol {
+  list-style: decimal inside none;
+  margin-bottom: 1em;
+}

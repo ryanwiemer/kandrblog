@@ -9,13 +9,13 @@
 
 		<ol class="comment-list">
 				<?php wp_list_comments(); ?>
-		</ol><!-- .comment-list -->
+		</ol>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="navigation-comment" role="navigation">
 			<div class="previous"><?php previous_comments_link( __( '&larr; Older Comments', 'simple_blog' ) ); ?></div>
 			<div class="next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'simple_blog' ) ); ?></div>
-		</nav><!-- #comment-nav-below -->
+		</nav>
 		<?php endif; // check for comment navigation ?>
 </div><!-- #comments -->
 	<?php endif; // have_comments() ?>

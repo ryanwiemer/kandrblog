@@ -16,4 +16,4 @@
     <a href="http://www.bloglovin.com/en/blog/3862566" target="_blank"><span class="icon-bloglovin"></span></a>
   </div>
     <a href="<?php echo get_site_url() ?>/archive" class="btn--sidebar btn">view archive</a>
-</div><!-- .sidebar -->
+</div>

@@ -91,8 +91,6 @@ function wpb_imagelink_setup() {
 }
 add_action('admin_init', 'wpb_imagelink_setup', 10);
 
-
-
 //Remove <p> tags from images
 function filter_ptags_on_images($content){
   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);

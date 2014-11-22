@@ -11,7 +11,7 @@
     <p>Made with <span>&hearts;</span> in California</p>
   </div>
   </a>
-</footer><!-- site-footer -->
+</footer>
 <?php wp_footer(); ?>
 </body>
 </html>

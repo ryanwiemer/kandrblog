@@ -25,5 +25,5 @@
 			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps a search would help?', 'themeTextDomain' ); ?></p>
 
 		<?php endif; ?>
-	</div><!-- .post__content -->
+	</div>
 </article>

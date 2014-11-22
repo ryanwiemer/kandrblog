@@ -1,0 +1,33 @@
+/* ------- *
+ *  Blockquote  *
+ * ------- */
+
+ blockquote {
+   background: $tertiary;
+   border-left: 6px solid $highlight;
+   margin: 0 0 1em;
+   padding: 0.5em 6px;
+   quotes: "\201C""\201D""\2018""\2019";
+   border-radius: 2px;
+ }
+ blockquote:before {
+   color: darken($secondary, 5%);
+   content: open-quote;
+   font-size: 3em;
+   line-height: 0.1em;
+   margin-right: 0.25em;
+   vertical-align: -0.4em;
+ }
+
+ blockquote:after {
+   color: darken($secondary, 5%);
+   content: close-quote;
+   font-size: 3em;
+   line-height: 0.1em;
+   margin-left: 0.25em;
+   vertical-align: -0.4em;
+ }
+
+ blockquote p {
+   display: inline;
+ }

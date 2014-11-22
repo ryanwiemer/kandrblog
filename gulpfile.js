@@ -12,7 +12,6 @@ var lr = require('tiny-lr');
 var livereload = require('gulp-livereload');
 var autoprefixer = require('gulp-autoprefixer');
 
-
 // Move and Minfiy Scripts from Bower
 gulp.task ('move', function() {
     gulp.src(['bower_components/picturefill/dist/picturefill.js','bower_components/jquery/dist/jquery.js','bower_components/responsive-nav/responsive-nav.js','bower_components/jquery-validate/dist/jquery.validate.js','bower_components/jquery-form/jquery.form.js'])
