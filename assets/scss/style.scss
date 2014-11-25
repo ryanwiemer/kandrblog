@@ -1,12 +1,6 @@
 // Bourbon.io w/ Neat
-//$visual-grid: true;
-//$visual-grid-opacity: 0.1;
-//$visual-grid-color: yellow;
-$gutter: 6em;
-
-@import "../../bower_components/bourbon/dist/bourbon";
-@import "../../bower_components/neat/app/assets/stylesheets/neat";
-
+@import "bourbon";
+@import "neat";
 
 //Variables
 @import "_vars";
