@@ -1,8 +1,7 @@
 <?php
 /**
- * Page Template
+ * Page
  */
-
 get_header(); ?>
 
 <div class="container">

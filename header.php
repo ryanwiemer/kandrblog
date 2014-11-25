@@ -1,6 +1,6 @@
 <?php
 /**
- * Header Template
+ * Header
  */
 ?><!DOCTYPE html>
 <head>

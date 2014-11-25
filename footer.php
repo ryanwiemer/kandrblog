@@ -1,6 +1,6 @@
 <?php
 /**
- * Footer Template
+ * Footer
  */
 ?>
 

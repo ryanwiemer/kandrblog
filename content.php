@@ -1,6 +1,6 @@
 <?php
 /**
- * Content Template
+ * Content
  */
 ?>
 

@@ -1,8 +1,7 @@
 <?php
 /**
- * Single Template
+ * Single
  */
-
 get_header(); ?>
 
 <div class="container">

@@ -1,6 +1,6 @@
 <?php
 /**
- * Archvie Page Template
+ * Archvie Page
  */
 
 get_header(); ?>

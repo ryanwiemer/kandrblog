@@ -1,8 +1,7 @@
 <?php
 /**
- * Contact Page Template
+ * Contact Page
  */
-
 get_header(); ?>
 
 <div class="container">

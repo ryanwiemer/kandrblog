@@ -1,8 +1,7 @@
 <?php
 /**
- * Search Page Template
+ * Search
  */
-
 get_header(); ?>
 
 <div class="container">

@@ -1,8 +1,7 @@
 <?php
 /**
- * FAQ Page Template
+ * FAQ Page
  */
-
 get_header(); ?>
 
 <div class="container">

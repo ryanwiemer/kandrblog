@@ -1,6 +1,6 @@
 <?php
 /**
- * Comments Template
+ * Comments
  */
 ?>
 
@@ -17,7 +17,7 @@
 			<div class="next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'simple_blog' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
-</div><!-- #comments -->
+</div>
 	<?php endif; // have_comments() ?>
 
 	<?php

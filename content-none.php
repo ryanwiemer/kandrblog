@@ -1,9 +1,8 @@
 <?php
 /**
- * The template used for displaying page content in page.php
- */
+	* Content-None
+	*/
 ?>
-
 
 <header class="page__header">
 	<h2 class="page__title"><?php _e( 'Nothing Found', 'themeTextDomain' ); ?></h2>

@@ -1,8 +1,7 @@
 <?php
 /**
- * Sidebar Template
+ * Sidebar
  */
-
 ?>
 <div class="sidebar" role="complementary">
   <div class="sidebar__img__container">
