@@ -1,5 +1,5 @@
 /* ------------------ *
- *   ENTRY (ARTICLE)  *
+ *        POSTS       *
  * ------------------ */
 
 article {
@@ -75,6 +75,7 @@ article img {
   color: gray;
   padding: .5em;
   border-radius: 2px;
+  text-transform: lowercase;
 }
 
 .post-categories a:hover {
