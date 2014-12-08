@@ -21,8 +21,8 @@ get_header(); ?>
 		<?php endwhile; ?>
 
 		<div class="sidebar sidebar--about" role="complementary">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/kirsten_likes.jpg" alt="Things Kirsten likes" class="about-img" />
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ryan_likes.jpg" alt="Things Ryan likes" class="about-img" />
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/kirsten.jpg" alt="Kirsten Wiemer" class="about-img" />
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ryan.jpg" alt="Ryan Wiemer" class="about-img" />
 		</div>
 </div>
 
