@@ -37,9 +37,12 @@
 
 @media
 (-webkit-min-device-pixel-ratio: 1.5),
-(min-resolution: 144dpi){
+(min-resolution: 144dppx){
   .sidebar__img {
     background: url('../img/bio@2x.jpg');
+    height: 230px;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
