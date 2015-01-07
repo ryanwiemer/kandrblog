@@ -2,7 +2,6 @@ K&R Blog
 ===
 
 Custom WordPress theme for www.kandrblog.com
-- Version: 1.0.0
 
 ##Copyright
 - All rights reserved
