@@ -108,6 +108,13 @@ function remove_thumbnail_dimensions( $html ) {
   		return $html;
 }
 
+// Unset 'Large' size
+function sgr_filter_image_sizes( $sizes) {
+  unset( $sizes['large']);
+  return $sizes;
+}
+add_filter('intermediate_image_sizes_advanced', 'sgr_filter_image_sizes');
+
 //Remove Attachement Dimensions
 add_shortcode( 'wp_caption', 'fixed_img_caption_shortcode' );
 add_shortcode( 'caption', 'fixed_img_caption_shortcode' );
