@@ -1,8 +1,12 @@
-K&R Blog
-===
+#README
+WordPress theme built for K&R Blog.
 
-Custom WordPress theme for www.kandrblog.com
+###Dependencies
+- Git
+- Node.js
+- Gulp
+- Bower
 
-##Copyright
+###Copyright
 - All rights reserved
 - Copyright 2015 K&R Blog
