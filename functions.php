@@ -157,6 +157,14 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+
+//Remove Additional PictureFill Script From Plugin
+function mytheme_dequeue_scripts() {
+  wp_dequeue_script('picturefill');
+}
+add_action('wp_enqueue_scripts', 'mytheme_dequeue_scripts');
+
+
 ////////////////////////
 //CSS & JS Scripts//////
 ////////////////////////
