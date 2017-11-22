@@ -1,12 +1,12 @@
-#README
-WordPress theme built for K&R Blog.
+# README
+WordPress theme built for K&R Blog which was active from 2014 - 2015.
 
-###Dependencies
+### Dependencies
 - Git
 - Node.js
 - Gulp
 - Bower
 
-###Copyright
+### Copyright
 - All rights reserved
-- Copyright 2015 K&R Blog
+- Copyright K&R Blog
